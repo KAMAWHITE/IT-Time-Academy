@@ -1,0 +1,100 @@
+{
+    "title": "Our Courses",
+    "categories": [
+        {
+            "name": "Front-End Development",
+            "items": [
+                {
+                    "icon": "react",
+                    "name": "React.js",
+                    "description": "JavaScript library for building modern user interfaces"
+                },
+                {
+                    "icon": "vue",
+                    "name": "Vue.js",
+                    "description": "Progressive JavaScript framework"
+                },
+                {
+                    "icon": "angular",
+                    "name": "Angular.js",
+                    "description": "Platform for building web applications"
+                },
+                {
+                    "icon": "javascript",
+                    "name": "JavaScript",
+                    "description": "Core programming language for web development"
+                },
+                {
+                    "icon": "htmlcss",
+                    "name": "HTML/CSS",
+                    "description": "Foundation of web development"
+                },
+                {
+                    "icon": "python",
+                    "name": "Python",
+                    "description": "Versatile programming language"
+                }
+            ]
+        },
+        {
+            "name": "Back-End Development",
+            "items": [
+                {
+                    "icon": "nodejs",
+                    "name": "Node.js",
+                    "description": "JavaScript runtime for server-side development"
+                },
+                {
+                    "icon": "express",
+                    "name": "Express.js",
+                    "description": "Web framework for Node.js"
+                },
+                {
+                    "icon": "mongodb",
+                    "name": "MongoDB",
+                    "description": "NoSQL database"
+                },
+                {
+                    "icon": "sql",
+                    "name": "SQL",
+                    "description": "Managing relational databases"
+                },
+                {
+                    "icon": "php",
+                    "name": "PHP",
+                    "description": "Server-side scripting language"
+                }
+            ]
+        },
+        {
+            "name": "Hacker",
+            "items": [
+                {
+                    "icon": "cybersecurity",
+                    "name": "Cybersecurity",
+                    "description": "Fundamentals of cybersecurity and protection methods"
+                },
+                {
+                    "icon": "ethicalhacking",
+                    "name": "Ethical Hacking",
+                    "description": "Ethical hacking and system testing"
+                },
+                {
+                    "icon": "networksecurity",
+                    "name": "Network Security",
+                    "description": "Network security and threat protection"
+                },
+                {
+                    "icon": "pentesting",
+                    "name": "Penetration Testing",
+                    "description": "Identifying and testing vulnerabilities"
+                },
+                {
+                    "icon": "securitytools",
+                    "name": "Security Tools",
+                    "description": "Tools and software for security"
+                }
+            ]
+        }
+    ]
+}

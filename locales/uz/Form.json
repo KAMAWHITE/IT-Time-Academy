@@ -1,0 +1,62 @@
+{
+    "tabs": {
+      "kurs": "Kursqa yozilish",
+      "ish": "Ishga joylashish"
+    },
+    "kurs": {
+      "title": "Kurslarimizga yoziling",
+      "description": "Zamonaviy kasblarni professional ustozlardan o’rganing va IT sohasida o’z o’rningizni toping!",
+      "features": [
+        {
+          "title": "Professional ta’lim",
+          "description": "Tajribali o’qituvchilardan bilim oling"
+        },
+        {
+          "title": "Amaliy tajriba",
+          "description": "Real loyihalarda ustida ishlash"
+        },
+        {
+          "title": "Karyeraqo’llab-quvvatlash",
+          "description": "Karyerangizni rivojlantirishda yordam"
+        }
+      ],
+      "formTitle": "Kursqa yozilish",
+      "form": {
+        "name": "Ism familiyangiz",
+        "phone": "Telefon raqamingiz",
+        "course": "Kursni tanlang",
+        "message": "Qo'shimcha xabar",
+        "submit": "Yuborish"
+      }
+    },
+    "ish": {
+      "title": "Ishga joylashishni hohlaysizmi?",
+      "description": "Rezyume yuboring va biz bilan bo’glaningiz. Subhatdan muvaffaqiyatli o’tganingizdan so’ng ishga joylashishingiz mumkin!",
+      "features": [
+        {
+          "title": "Kafolatlangan ish",
+          "description": "Malakangiz mos topshida yordam beramiz"
+        },
+        {
+          "title": "Yaxshi maosh",
+          "description": "IT sohasida yuqori daromad va imkoniyatlar"
+        },
+        {
+          "title": "Karyera o’sishi",
+          "description": "Doimiy rivojlanish va yangi imkoniyatlar"
+        }
+      ],
+      "formTitle": "Rezyume yuborish",
+      "form": {
+        "name": "Ism familiyangiz",
+        "phone": "Telefon raqamingiz",
+        "email": "Email manzilingiz",
+        "about": "O’zingiz haqida",
+        "experience": "Ish tajribangiz",
+        "skills": "Ko’nikmalaringiz",
+        "fileSelect": "Faylni tanlang",
+        "fileNotSelected": "Fayl tanlanmagan",
+        "submit": "Yuborish"
+      }
+    }
+  }

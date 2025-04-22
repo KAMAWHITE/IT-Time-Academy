@@ -1,0 +1,15 @@
+{
+    "title": "Submit an Application",
+    "text": "Submit an application for the course you are interested in, and we will contact you",
+    "fullname": "Your name",
+    "Selector": {
+        "default": "Select a course",
+        "frontend": "Frontend Development",
+        "backend": "Backend Development",
+        "dizayner": "UI/UX Designer",
+        "mobil": "Mobile Development",
+        "data": "Data Science",
+        "cyber": "Cybersecurity"
+    },
+    "BtnText": "Submit"
+}

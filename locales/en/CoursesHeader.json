@@ -1,0 +1,172 @@
+{
+    "Frontend": {
+        "BigTitle": "FRONT-END",
+        "bookmark": "★ Installment Plan",
+        "title": "Front-end",
+        "text": "Frontend web development. HTML, CSS, JavaScript, React, and other modern...",
+        "price": "1,200,000 sum/month",
+        "time": {
+            "icon": "time",
+            "text": "6 months"
+        },
+        "BtnText": "Learn More"
+    },
+    "Backend": {
+        "BigTitle": "BACK-END",
+        "bookmark": "★ Installment Plan",
+        "title": "Back-end",
+        "text": "Server-side development. Node.js, Python, databases, and APIs...",
+        "price": "1,200,000 sum/month",
+        "time": {
+            "icon": "time",
+            "text": "6 months"
+        },
+        "BtnText": "Learn More"
+    },
+    "Dizayn": {
+        "BigTitle": "DESIGN",
+        "bookmark": "★ Installment Plan",
+        "title": "Design",
+        "text": "UI/UX design fundamentals. Graphic design, creating interfaces for web and mobile apps.",
+        "price": "1,500,000 sum/month",
+        "time": {
+            "icon": "time",
+            "text": "3 months"
+        },
+        "BtnText": "Learn More"
+    },
+    "batafsil": {
+        "Frontend": {
+            "left": {
+                "about": {
+                    "title": "About the Course",
+                    "text": "Frontend web development. HTML, CSS, JavaScript, React, and other modern technologies."
+                },
+                "time": {
+                    "title": "Duration",
+                    "text": "6 months"
+                },
+                "BtnText": "What’s Needed for Installments"
+            },
+            "right": {
+                "BigTitle": "Front-end",
+                "price": {
+                    "title": "Full Course Cost",
+                    "price": "1,200,000 sum / month",
+                    "text": "Monthly payment"
+                },
+                "all_price": {
+                    "title": "Total Cost",
+                    "price": "7,200,000 sum"
+                },
+                "credit": {
+                    "title": "Installment Terms",
+                    "price": "1,560,000 sum / month",
+                    "text": "Monthly payment"
+                },
+                "all_credit": {
+                    "title": "Total with Installments",
+                    "price": "9,360,000 sum",
+                    "text": "Important Information About Installments"
+                }
+            },
+            "modal": {
+                "BigTitle": "Installment Terms",
+                "text": "Important Information About Installments",
+                "icon": "sticky_",
+                "text1": "To qualify for installments, you must be officially employed",
+                "text2": "If you’re not employed, you’ll need a guarantor who is officially employed",
+                "text3": "A passport is required (yours and the guarantor’s, if applicable)",
+                "text4": "Payments start 2 months after completing the course!"
+            }
+        },
+        "Backend": {
+            "left": {
+                "about": {
+                    "title": "About the Course",
+                    "text": "Server-side development. Node.js, Python, databases, and API creation."
+                },
+                "time": {
+                    "title": "Duration",
+                    "text": "6 months"
+                },
+                "BtnText": "What’s Needed for Installments"
+            },
+            "right": {
+                "BigTitle": "Back-end",
+                "price": {
+                    "title": "Full Course Cost",
+                    "price": "1,200,000 sum / month",
+                    "text": "Monthly payment"
+                },
+                "all_price": {
+                    "title": "Total Cost",
+                    "price": "7,200,000 sum"
+                },
+                "credit": {
+                    "title": "Installment Terms",
+                    "price": "1,560,000 sum / month",
+                    "text": "Monthly payment"
+                },
+                "all_credit": {
+                    "title": "Total with Installments",
+                    "price": "9,360,000 sum",
+                    "text": "Important Information About Installments"
+                }
+            },
+            "modal": {
+                "BigTitle": "Installment Terms",
+                "text": "Important Information About Installments",
+                "icon": "sticky_",
+                "text1": "To qualify for installments, you must be officially employed",
+                "text2": "If you’re not employed, you’ll need a guarantor who is officially employed",
+                "text3": "A passport is required (yours and the guarantor’s, if applicable)",
+                "text4": "Payments start 2 months after completing the course!"
+            }
+        },
+        "Dizayn": {
+            "left": {
+                "about": {
+                    "title": "About the Course",
+                    "text": "UI/UX design fundamentals. Graphic design, creating interfaces for web and mobile apps."
+                },
+                "time": {
+                    "title": "Duration",
+                    "text": "3 months"
+                },
+                "BtnText": "What’s Needed for Installments"
+            },
+            "right": {
+                "BigTitle": "Design",
+                "price": {
+                    "title": "Full Course Cost",
+                    "price": "1,500,000 sum / month",
+                    "text": "Monthly payment"
+                },
+                "all_price": {
+                    "title": "Total Cost",
+                    "price": "4,500,000 sum"
+                },
+                "credit": {
+                    "title": "Installment Terms",
+                    "price": "1,950,000 sum / month",
+                    "text": "Monthly payment"
+                },
+                "all_credit": {
+                    "title": "Total with Installments",
+                    "price": "5,850,000 sum",
+                    "text": "Important Information About Installments"
+                }
+            },
+            "modal": {
+                "BigTitle": "Installment Terms",
+                "text": "Important Information About Installments",
+                "icon": "sticky_",
+                "text1": "To qualify for installments, you must be officially employed",
+                "text2": "If you’re not employed, you’ll need a guarantor who is officially employed",
+                "text3": "A passport is required (yours and the guarantor’s, if applicable)",
+                "text4": "Payments start 2 months after completing the course!"
+            }
+        }
+    }
+}

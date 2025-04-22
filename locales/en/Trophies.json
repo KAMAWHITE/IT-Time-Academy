@@ -1,0 +1,19 @@
+{
+    "title": "OUR ACHIEVEMENTS",
+    "stats": [
+      { "icon": "🎓", "value": "5+", "description": "Modern Courses" },
+      { "icon": "👨‍🎓", "value": "500+", "description": "Graduates" },
+      { "icon": "💼", "value": "80%", "description": "Employment Rate" },
+      { "icon": "⭐", "value": "4.9", "description": "Average Rating" }
+    ],
+    "mainSection": {
+      "title": "IT TIME ACADEMY - LEARN THE PROFESSIONS OF THE FUTURE",
+      "description": "Our training center provides professional education in modern software technologies, mobile graphics, and SMM. Experienced instructors and practical projects will help you become a modern specialist."
+    },
+    "bottomCards": [
+      { "icon": "🏆", "description": "Top IT Academy" },
+      { "icon": "📜", "description": "International Certificates" },
+      { "icon": "🤝", "description": "Collaboration with IT Companies" },
+      { "icon": "📚", "description": "Practical Education" }
+    ]
+  }

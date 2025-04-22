@@ -1,0 +1,66 @@
+{
+    "BigTitle": "Mentorlarimiz",
+    "BigText": "Sizga muvaffaqiyat sari yo‘l ko‘rsatadigan tajribali mutaxassislar",
+    "Mentors": [
+        {
+            "img": "/mentor1.jpg",
+            "fullname": "Rustambek Mamadaliyev",
+            "work": "Katta Frontend instruktori",
+            "about": "10 yildan ortiq dasturlash tajribasi, 500 dan ortiq muvaffaqiyatli bitiruvchilar, ko‘plab xalqaro loyihalar muallifi",
+            "tools": "ReactJS, Vue.js, Angular, TypeScript, Node.js, AWS, CI/CD",
+            "links": {
+                "link1": "https://www.linkedin.com/in/rustambek-mamadaliyev-39b095214/",
+                "link2": "https://t.me/the_rustambek",
+                "link3": "https://github.com/the-rustambek"
+            }
+        },
+        {
+            "img": "/mentor2.jpg",
+            "fullname": "G‘ofurova Gulbahor",
+            "work": "Grafik dizayn instruktori",
+            "about": "Grafik dizayn va raqamli san'at sohasida tajribali o‘qituvchi",
+            "tools": "Adobe Photoshop, Illustrator, Figma, UI/UX, After Effects, Premiere Pro, CorelDraw",
+            "links": {
+                "link1": "https://www.linkedin.com",
+                "link2": "https://t.me/telegram",
+                "link3": "https://github.com/"
+            }
+        },
+        {
+            "img": "/mentor3.jpg",
+            "fullname": "Islombek Rahimjonov",
+            "work": "Frontend instruktori",
+            "about": "Frontend va zamonaviy web texnologiyalar bo‘yicha tajribali o‘qituvchi",
+            "tools": "ReactJS, JavaScript, Redux, Material UI, Bootstrap, Git, Webpack",
+            "links": {
+                "link1": "https://www.linkedin.com",
+                "link2": "https://t.me/telegram",
+                "link3": "https://github.com/"
+            }
+        },
+        {
+            "img": "/mentor4.jpg",
+            "fullname": "Behruzbek Nazarov",
+            "work": "Frontend instruktori",
+            "about": "100 dan ortiq muvaffaqiyatli talabalarni yetishtirgan tajribali frontend instruktori",
+            "tools": "ReactJS, TypeScript, Next.js, Redux, Tailwind CSS, Git",
+            "links": {
+                "link1": "https://www.linkedin.com/in/behruz-nazarov-73b53926a/",
+                "link2": "https://t.me/Bexruzbek_Nazarov",
+                "link3": "https://github.com/NazarovBehruzbek"
+            }
+        },
+        {
+            "img": "/mentor5.jpg",
+            "fullname": "Xolmatov Dilshod",
+            "work": "Python instruktori",
+            "about": "Python va backend dasturlash bo‘yicha tajribali o‘qituvchi",
+            "tools": "Python, Django, FastAPI, PostgreSQL, Docker, Git, Linux",
+            "links": {
+                "link1": "https://www.linkedin.com/in/dilshod-xolmatov-928271243/",
+                "link2": "https://t.me/dilshoddevv",
+                "link3": "https://www.linkedin.com/in/dilshod-xolmatov-928271243/"
+            }
+        }
+    ]
+}

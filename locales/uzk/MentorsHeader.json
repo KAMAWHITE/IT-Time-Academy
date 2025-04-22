@@ -1,0 +1,115 @@
+{
+    "BigTitle": "Бизнинг менторлар",
+    "BigText": "Сизга муваффақиятга эришишга ёрдам берадиган тажрибали мутахассислар",
+    "Mentors": [
+        {
+            "fullname": "Rustambek Mamadaliyev",
+            "profession": "Сениор Frontend ўқитувчиси",
+            "info": "Ўн йилдан ортиқ дастурлаш тажрибаси ва беш йиллик ўқитиш фаолиятим давомида 500 дан ортиқ ўқувчиларни профессионал дастурчилар қилиб етиштирдим. Замонавий фронтенд технологиялари ва дастурлаш методологиялари бўйича чуқур билим ва амалий тажрибага эгаман.",
+            "tools": {
+                "title": "Ихтисослиги",
+                "tools": [
+                    "ReactJS",
+                    "Vue.js",
+                    "Angular",
+                    "TypeScript",
+                    "Node.js",
+                    "AWS",
+                    "CI/CD"
+                ]
+            },
+            "links": {
+                "link1": "linkedin",
+                "link2": "telegram",
+                "link3": "github"
+            }
+        },
+        {
+            "fullname": "G'ofurova Gulbahor",
+            "profession": "График дизайн ўқитувчиси",
+            "info": "График дизайн соҳасида бой тажрибага эга ўқитувчи сифатида, ўқувчиларга замонавий дизайн дастурлари ва технологияларини ўргатиш бўйича катта иштиёқ билан ёндашаман.",
+            "tools": {
+                "title": "Ихтисослиги",
+                "tools": [
+                    "Adobe Photoshop",
+                    "Illustrator",
+                    "Figma",
+                    "UI/UX",
+                    "After Effects",
+                    "Premiere Pro",
+                    "CorelDraw"
+                ]
+            },
+            "links": {
+                "link1": "linkedin",
+                "link2": "telegram",
+                "link3": "github"
+            }
+        },
+        {
+            "fullname": "Islombek Rahimjonov",
+            "profession": "Frontend ўқитувчиси",
+            "info": "Frontend дастурлаш соҳасида бой тажрибага эга ўқитувчи сифатида, ўқувчиларга замонавий веб-технологияларни ўргатиш бўйича катта иштиёқ билан ёндашаман.",
+            "tools": {
+                "title": "Ихтисослиги",
+                "tools": [
+                    "ReactJS",
+                    "JavaScript",
+                    "Redux",
+                    "Material UI",
+                    "Bootstrap",
+                    "Git",
+                    "Webpack"
+                ]
+            },
+            "links": {
+                "link1": "linkedin",
+                "link2": "telegram",
+                "link3": "github"
+            }
+        },
+        {
+            "fullname": "Behruzbek Nazarov",
+            "profession": "Frontend ўқитувчиси",
+            "info": "Frontend дастурлаш бўйича тажрибали ўқитувчи сифатида, ўқувчиларга замонавий веб-технологияларни ўргатиш бўйича катта тажрибага эгаман.",
+            "tools": {
+                "title": "Ихтисослиги",
+                "tools": [
+                    "ReactJS",
+                    "TypeScript",
+                    "Next.js",
+                    "Redux",
+                    "Tailwind CSS",
+                    "Git"
+                ]
+            },
+            "links": {
+                "link1": "linkedin",
+                "link2": "telegram",
+                "link3": "github"
+            }
+        },
+        {
+            "fullname": "Xolmatov Dilshod",
+            "profession": "Python ўқитувчиси",
+            "info": "Python дастурлаш тили ва бэкенд технологиялари бўйича тажрибали ўқитувчи сифатида, ўқувчиларга замонавий дастурлаш асосларини ўргатиш бўйича катта тажрибага эгаман.",
+            "tools": {
+                "title": "Ихтисослиги",
+                "tools": [
+                    "Python",
+                    "Django",
+                    "FastAPI",
+                    "PostgreSQL",
+                    "Docker",
+                    "Git",
+                    "Linux"
+                ]
+            },
+            "links": {
+                "link1": "linkedin",
+                "link2": "telegram",
+                "link3": "github"
+            }
+        }
+    ]
+}

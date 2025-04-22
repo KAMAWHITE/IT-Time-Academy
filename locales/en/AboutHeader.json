@@ -1,0 +1,68 @@
+{
+    "data": {
+        "icon": "calendar",
+        "text": "Serving since 2017"
+    },
+    "BigTitle": "IT TIME ACADEMY",
+    "BigText": "Modern IT education center — the best choice for learning future professions",
+    "text": "IT TIME ACADEMY is one of the largest and most trusted programming schools in Uzbekistan. Since 2017, we have been providing quality education in modern IT professions to thousands of young people. Our goal is not only to teach programming but also to prepare each student for a successful future career. We pay special attention to the individual development of each student and use modern teaching methods.",
+    "Cards": [
+        {
+            "icon": "noutbook",
+            "title": "Modern Programming",
+            "text": "We teach the latest technologies and programming languages"
+        },
+        {
+            "icon": "teacher",
+            "title": "Experienced Instructors",
+            "text": "Education from professional mentors and practicing programmers"
+        },
+        {
+            "icon": "friends",
+            "title": "Practical Experience",
+            "text": "Opportunity to work on real projects and build a portfolio"
+        }
+    ],
+    "Stats": {
+        "text1": "Successful Graduates",
+        "text2": "Professional Instructors",
+        "text3": "Modern Courses",
+        "text4": "Employment Rate"
+    },
+    "AcademyTitle": "Top IT Academy",
+    "Academy": [
+        {
+            "icon": "globus",
+            "title": "International Certificates",
+            "text": "We provide certificates that meet international standards"
+        },
+        {
+            "icon": "friends",
+            "title": "Collaboration with IT Companies",
+            "text": "We work in partnership with leading IT companies"
+        },
+        {
+            "icon": "books",
+            "title": "Practical Education",
+            "text": "We develop practical skills alongside theoretical knowledge"
+        }
+    ],
+    "ValuesTitle": "Our Values",
+    "Values": [
+        {
+            "icon": "people",
+            "title": "Individual Approach",
+            "text": "Special attention and support for each student"
+        },
+        {
+            "icon": "quality",
+            "title": "Quality Education",
+            "text": "Curriculum that meets international standards"
+        },
+        {
+            "icon": "raketa",
+            "title": "Career Support",
+            "text": "Assistance and guidance for employment"
+        }
+    ]
+}

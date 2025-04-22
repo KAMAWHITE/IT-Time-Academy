@@ -1,0 +1,17 @@
+{
+    "modalTitle": "Бепул консультация",
+    "modalDescription": "Формани тўлдиринг ва биз сиз билан боғланамиз",
+    "fields": {
+        "nameLabel": "Исмингиз",
+        "courseLabel": "Курсни танланг",
+        "phoneLabel": "",
+        "phonePlaceholder": "+998"
+    },
+    "button": "Юбориш",
+    "courseOptions": [
+        "Frontend",
+        "Backend",
+        "Мобил Ишлаб Чиқиш",
+        "UI/UX Дизайн"
+    ]
+}

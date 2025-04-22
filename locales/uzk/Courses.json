@@ -1,0 +1,100 @@
+{
+    "title": "Бизнинг курслар",
+    "categories": [
+        {
+            "name": "Front-End дастурлаш",
+            "items": [
+                {
+                    "icon": "react",
+                    "name": "React.js",
+                    "description": "Замонавий фойдаланувчи интерфейсларини яратиш учун JavaScript кутубхонаси"
+                },
+                {
+                    "icon": "vue",
+                    "name": "Vue.js",
+                    "description": "Прогрессив JavaScript фреймворки"
+                },
+                {
+                    "icon": "angular",
+                    "name": "Angular.js",
+                    "description": "Веб-иловаларни яратиш платформаси"
+                },
+                {
+                    "icon": "javascript",
+                    "name": "JavaScript",
+                    "description": "Веб-дастурлаш учун асосий дастурлаш тили"
+                },
+                {
+                    "icon": "htmlcss",
+                    "name": "HTML/CSS",
+                    "description": "Веб-дастурлашнинг пойдевори"
+                },
+                {
+                    "icon": "python",
+                    "name": "Python",
+                    "description": "Универсал дастурлаш тили"
+                }
+            ]
+        },
+        {
+            "name": "Back-End дастурлаш",
+            "items": [
+                {
+                    "icon": "nodejs",
+                    "name": "Node.js",
+                    "description": "Сервер томонидаги дастурлаш учун JavaScript муҳити"
+                },
+                {
+                    "icon": "express",
+                    "name": "Express.js",
+                    "description": "Node.js учун веб-фреймворк"
+                },
+                {
+                    "icon": "mongodb",
+                    "name": "MongoDB",
+                    "description": "NoSQL маълумотлар базаси"
+                },
+                {
+                    "icon": "sql",
+                    "name": "SQL",
+                    "description": "Реляцион маълумотлар базасини бошқариш"
+                },
+                {
+                    "icon": "php",
+                    "name": "PHP",
+                    "description": "Сервер томонидаги скрипт тили"
+                }
+            ]
+        },
+        {
+            "name": "Хакер",
+            "items": [
+                {
+                    "icon": "cybersecurity",
+                    "name": "Киберхавфсизлик",
+                    "description": "Киберхавфсизлик асослари ва ҳимоя усуллари"
+                },
+                {
+                    "icon": "ethicalhacking",
+                    "name": "Этик хакинг",
+                    "description": "Ахлоқий хакинг ва тизимларни тестлаш"
+                },
+                {
+                    "icon": "networksecurity",
+                    "name": "Тармоқ хавфсизлиги",
+                    "description": "Тармоқ хавфсизлиги ва таҳдидлардан ҳимоя"
+                },
+                {
+                    "icon": "pentesting",
+                    "name": "Penetration Testing",
+                    "description": "Заифликларни аниқлаш ва тестлаш"
+                },
+                {
+                    "icon": "securitytools",
+                    "name": "Security Tools",
+                    "description": "Хавфсизлик воситалари ва дастурлар"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "It_Time_Academy": {
+        "title": "IT Time Academy",
+        "text": "Zamonaviy IT kasblarini professional darajada o'rgatuvchi o'quv markazi. Kelajak kasblarini biz bilan o'rganing!",
+        "icons": {
+            "icon1": "facebook",
+            "icon2": "instagram",
+            "icon3": "telegram",
+            "icon4": "youtobe"
+        }
+    },
+    "Kurslar": {
+        "title": "Kurslar",
+        "link1": "Asosiy",
+        "link2": "Kurslar",
+        "link3": "Mentorlar",
+        "link4": "Biz haqqimizda",
+        "link5": "Aloqa"
+    },
+    "Contacts": {
+        "title": "Bog'lanish",
+        "div1": {
+            "icon": "location",
+            "text": "Toshkent, Amir Temur shoh ko‘chasi, 100A."
+        },
+        "div2": {
+            "icon": "phone",
+            "text": "+998 (94) 782 00 92"
+        },
+        "div3": {
+            "icon": "email",
+            "text": "ittimeacademy@gmail.com"
+        },
+        "div4": {
+            "icon": "time",
+            "text": "Du-Sha: 09:00 - 22:00"
+        }
+    },
+    "text1": "2025 IT Time AcademyBarcha huquqlar himoyalangan",
+    "text2": "Maxfiylik siyosati",
+    "text3": "Foydalanish shartlari"
+}

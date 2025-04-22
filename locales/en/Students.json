@@ -1,0 +1,42 @@
+[
+    {
+      "name": "AKBAR",
+      "status": "Graduate",
+      "occupation": "Frontend developer",
+      "about": "Successfully completed the course and found a job in an IT company",
+      "skills": ["HTML", "CSS", "JavaScript", "React"],
+      "company": "LIMSA",
+      "incomeGrowth": "700+",
+      "videoSrc": "/intervyu.mp4"
+    },
+    {
+      "name": "ASILBEK",
+      "status": "Graduate",
+      "occupation": "Frontend developer",
+      "about": "Successfully completed the course and found a job in an IT company",
+      "skills": ["HTML", "SASS", "TypeScript", "React", "RestAPI"],
+      "company": "MARSITSCHOOL",
+      "incomeGrowth": "900+",
+      "videoSrc": "/intervyu.mp4"
+    },
+    {
+      "name": "MUHAMMADISLOM",
+      "status": "Graduate",
+      "occupation": "Frontend developer",
+      "about": "Successfully completed the course and found a job in an IT company",
+      "skills": ["HTML", "SASS", "JavaScript", "React", "TAILWIND", "TypeScript"],
+      "company": "IT WORKS",
+      "incomeGrowth": "750+",
+      "videoSrc": "/intervyu.mp4"
+    },
+    {
+      "name": "SAMANDAR",
+      "status": "Graduate",
+      "occupation": "Frontend developer",
+      "about": "Successfully completed the course and found a job in an IT company",
+      "skills": ["HTML", "SASS", "JavaScript", "Vue 3", "Nuxt", "TypeScript"],
+      "company": "GREATSOFT",
+      "incomeGrowth": "650+",
+      "videoSrc": "/intervyu.mp4"
+    }
+  ]

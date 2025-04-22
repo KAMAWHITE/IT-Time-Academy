@@ -1,0 +1,172 @@
+{
+    "Frontend": {
+        "BigTitle": "FRONT-END",
+        "bookmark": "★ Muddatli to'lov",
+        "title": "Front-end",
+        "text": "Frontend veb-ishlab chiqish. HTML, CSS, JavaScript, React va boshqa zamonaviy...",
+        "price": "1200000 so'm/oy",
+        "time": {
+            "icon": "time",
+            "text": "6 oy"
+        },
+        "BtnText": "Batafsil"
+    },
+    "Backend": {
+        "BigTitle": "BACK-END",
+        "bookmark": "★ Muddatli to'lov",
+        "title": "Back-end",
+        "text": "Server tomonini ishlab chiqish. Node.js, Python, ma'lumotlar bazasi va API...",
+        "price": "1200000 so'm/oy",
+        "time": {
+            "icon": "time",
+            "text": "6 oy"
+        },
+        "BtnText": "Batafsil"
+    },
+    "Dizayn": {
+        "BigTitle": "DIZAYN",
+        "bookmark": "★ Muddatli to'lov",
+        "title": "Dizayn",
+        "text": "UI/UX dizayn asoslari. Grafik dizayn, veb va mobil ilovalar uchun interfeys yaratish.",
+        "price": "1500000 so'm/oy",
+        "time": {
+            "icon": "time",
+            "text": "3 oy"
+        },
+        "BtnText": "Batafsil"
+    },
+    "batafsil": {
+        "Frontend": {
+            "left": {
+                "about": {
+                    "title": "Kurs haqida",
+                    "text": "Frontend veb-ishlab chiqish. HTML, CSS, JavaScript, React va boshqa zamonaviy texnologiyalar."
+                },
+                "time": {
+                    "title": "Davomiyligi",
+                    "text": "6 oy"
+                },
+                "BtnText": "Bo'lib to'lash uchun nima kerak"
+            },
+            "right": {
+                "BigTitle": "Front-end",
+                "price": {
+                    "title": "Kursning to'liq narxi",
+                    "price": "1 200 000 so'm / oy",
+                    "text": "Oylik to'lov"
+                },
+                "all_price": {
+                    "title": "Jami to'lov",
+                    "price": "7 200 000 so'm"
+                },
+                "credit": {
+                    "title": "Bo'lib to'lash shartlari",
+                    "price": "1 560 000 so'm / oy",
+                    "text": "Oylik to'lov"
+                },
+                "all_credit": {
+                    "title": "Bo'lib to'lash bilan jami",
+                    "price": "9 360 000 so'm",
+                    "text": "Bo'lib to'lash haqida muhim ma'lumot"
+                }
+            },
+            "modal": {
+                "BigTitle": "Bo'lib to'lash shartlari",
+                "text": "Bo'lib to'lash haqida muhim ma'lumot",
+                "icon": "sticky_",
+                "text1": "Bo'lib to'lash uchun siz rasmiy ishlaydigan bo'lishingiz kerak",
+                "text2": "Agar ishlamayotgan bo'lsangiz, rasmiy ishlaydigan kafil kerak bo'ladi",
+                "text3": "Passport talab qilinadi (sizniki va kafilniki, agar kerak bo'lsa)",
+                "text4": "To'lov o'qishni tugatganingizdan 2 oy o'tgach to'lab kelishingiz zarur bo'ladi!"
+            }
+        },
+        "Backend": {
+            "left": {
+                "about": {
+                    "title": "Kurs haqida",
+                    "text": "Server tomonini ishlab chiqish. Node.js, Python, ma'lumotlar bazasi va API yaratish."
+                },
+                "time": {
+                    "title": "Davomiyligi",
+                    "text": "6 oy"
+                },
+                "BtnText": "Bo'lib to'lash uchun nima kerak"
+            },
+            "right": {
+                "BigTitle": "Back-end",
+                "price": {
+                    "title": "Kursning to'liq narxi",
+                    "price": "1 200 000 so'm / oy",
+                    "text": "Oylik to'lov"
+                },
+                "all_price": {
+                    "title": "Jami to'lov",
+                    "price": "7 200 000 so'm"
+                },
+                "credit": {
+                    "title": "Bo'lib to'lash shartlari",
+                    "price": "1 560 000 so'm / oy",
+                    "text": "Oylik to'lov"
+                },
+                "all_credit": {
+                    "title": "Bo'lib to'lash bilan jami",
+                    "price": "9 360 000 so'm",
+                    "text": "Bo'lib to'lash haqida muhim ma'lumot"
+                }
+            },
+            "modal": {
+                "BigTitle": "Bo'lib to'lash shartlari",
+                "text": "Bo'lib to'lash haqida muhim ma'lumot",
+                "icon": "sticky_",
+                "text1": "Bo'lib to'lash uchun siz rasmiy ishlaydigan bo'lishingiz kerak",
+                "text2": "Agar ishlamayotgan bo'lsangiz, rasmiy ishlaydigan kafil kerak bo'ladi",
+                "text3": "Passport talab qilinadi (sizniki va kafilniki, agar kerak bo'lsa)",
+                "text4": "To'lov o'qishni tugatganingizdan 2 oy o'tgach to'lab kelishingiz zarur bo'ladi!"
+            }
+        },
+        "Dizayn": {
+            "left": {
+                "about": {
+                    "title": "Kurs haqida",
+                    "text": "UI/UX dizayn asoslari. Grafik dizayn, veb va mobil ilovalar uchun interfeys yaratish."
+                },
+                "time": {
+                    "title": "Davomiyligi",
+                    "text": "3 oy"
+                },
+                "BtnText": "Bo'lib to'lash uchun nima kerak"
+            },
+            "right": {
+                "BigTitle": "Dizayn",
+                "price": {
+                    "title": "Kursning to'liq narxi",
+                    "price": "1 500 000 so'm / oy",
+                    "text": "Oylik to'lov"
+                },
+                "all_price": {
+                    "title": "Jami to'lov",
+                    "price": "4 500 000 so'm"
+                },
+                "credit": {
+                    "title": "Bo'lib to'lash shartlari",
+                    "price": "1 950 000 so'm / oy",
+                    "text": "Oylik to'lov"
+                },
+                "all_credit": {
+                    "title": "Bo'lib to'lash bilan jami",
+                    "price": "5 850 000 so'm",
+                    "text": "Bo'lib to'lash haqida muhim ma'lumot"
+                }
+            },
+            "modal": {
+                "BigTitle": "Bo'lib to'lash shartlari",
+                "text": "Bo'lib to'lash haqida muhim ma'lumot",
+                "icon": "sticky_",
+                "text1": "Bo'lib to'lash uchun siz rasmiy ishlaydigan bo'lishingiz kerak",
+                "text2": "Agar ishlamayotgan bo'lsangiz, rasmiy ishlaydigan kafil kerak bo'ladi",
+                "text3": "Passport talab qilinadi (sizniki va kafilniki, agar kerak bo'lsa)",
+                "text4": "To'lov o'qishni tugatganingizdan 2 oy o'tgach to'lab kelishingiz zarur bo'ladi!"
+            }
+        }
+    }
+}

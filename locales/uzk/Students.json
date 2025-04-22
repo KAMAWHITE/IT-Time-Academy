@@ -1,0 +1,42 @@
+[
+    {
+      "name": "АКБАР",
+      "status": "Битирувчи",
+      "occupation": "Frontend дастурчи",
+      "about": "Курсни муваффақиятли тугатди ва IT компаниясида иш топди",
+      "skills": ["HTML", "CSS", "JavaScript", "React"],
+      "company": "LIMSA",
+      "incomeGrowth": "700+",
+      "videoSrc": "/intervyu.mp4"
+    },
+    {
+      "name": "АСИЛБЕК",
+      "status": "Битирувчи",
+      "occupation": "Frontend дастурчи",
+      "about": "Курсни муваффақиятли тугатди ва IT компаниясида иш топди",
+      "skills": ["HTML", "SASS", "TypeScript", "React", "RestAPI"],
+      "company": "MARSITSCHOOL",
+      "incomeGrowth": "900+",
+      "videoSrc": "/intervyu.mp4"
+    },
+    {
+      "name": "МУҲАММАДИСЛОМ",
+      "status": "Битирувчи",
+      "occupation": "Frontend дастурчи",
+      "about": "Курсни муваффақиятли тугатди ва IT компаниясида иш топди",
+      "skills": ["HTML", "SASS", "JavaScript", "React", "TAILWIND", "TypeScript"],
+      "company": "IT WORKS",
+      "incomeGrowth": "750+",
+      "videoSrc": "/intervyu.mp4"
+    },
+    {
+      "name": "САМАНДАР",
+      "status": "Битирувчи",
+      "occupation": "Frontend дастурчи",
+      "about": "Курсни муваффақиятли тугатди ва IT компаниясида иш топди",
+      "skills": ["HTML", "SASS", "JavaScript", "Vue 3", "Nuxt", "TypeScript"],
+      "company": "GREATSOFT",
+      "incomeGrowth": "650+",
+      "videoSrc": "/intervyu.mp4"
+    }
+  ]

@@ -1,0 +1,42 @@
+{
+    "It_Time_Academy": {
+        "title": "IT Time Academy",
+        "text": "Замонавий IT касбларини профессионал даражада ўргатувчи ўқув маркази. Келажак касбларини биз билан ўрганинг!",
+        "icons": {
+            "icon1": "facebook",
+            "icon2": "instagram",
+            "icon3": "telegram",
+            "icon4": "youtube"
+        }
+    },
+    "Kurslar": {
+        "title": "Курслар",
+        "link1": "Асосий",
+        "link2": "Курслар",
+        "link3": "Менторлар",
+        "link4": "Биз ҳаққимизда",
+        "link5": "Алоқа"
+    },
+    "Contacts": {
+        "title": "Боғланиш",
+        "div1": {
+            "icon": "location",
+            "text": "Тошкент, Амир Темур шоҳ кўчаси, 100А."
+        },
+        "div2": {
+            "icon": "phone",
+            "text": "+998 (94) 782 00 92"
+        },
+        "div3": {
+            "icon": "email",
+            "text": "ittimeacademy@gmail.com"
+        },
+        "div4": {
+            "icon": "time",
+            "text": "Ду-Ша: 09:00 - 22:00"
+        }
+    },
+    "text1": "2025 IT Time Academy Барча ҳуқуқлар ҳимояланган",
+    "text2": "Махфийлик сиёсати",
+    "text3": "Фойдаланиш шартлари"
+}

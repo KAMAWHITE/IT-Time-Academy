@@ -1,0 +1,15 @@
+{
+    "title": "Ariza qoldiring",
+    "text": "O'zingizni qiziqtirgan kurs bo'yicha ariza qoldiring va biz siz bilan bog'lanamiz",
+    "fullname": "Ismingiz",
+    "Selector": {
+        "default": "Kursni tanlang",
+        "frontend": "Frontend dasturlash",
+        "backend": "Backend dasturlash",
+        "dizayner": "UI/UX dizayner",
+        "mobil": "Mobil dasturlash",
+        "data": "Data science",
+        "cyber": "Cybersecurity"
+    },
+    "BtnText": "Yuborish"
+}

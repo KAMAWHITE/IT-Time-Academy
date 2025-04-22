@@ -1,0 +1,100 @@
+{
+    "title": "Наши курсы",
+    "categories": [
+        {
+            "name": "Front-End разработка",
+            "items": [
+                {
+                    "icon": "react",
+                    "name": "React.js",
+                    "description": "Библиотека JavaScript для создания современных пользовательских интерфейсов"
+                },
+                {
+                    "icon": "vue",
+                    "name": "Vue.js",
+                    "description": "Прогрессивный JavaScript-фреймворк"
+                },
+                {
+                    "icon": "angular",
+                    "name": "Angular.js",
+                    "description": "Платформа для создания веб-приложений"
+                },
+                {
+                    "icon": "javascript",
+                    "name": "JavaScript",
+                    "description": "Основной язык программирования для веб-разработки"
+                },
+                {
+                    "icon": "htmlcss",
+                    "name": "HTML/CSS",
+                    "description": "Основа веб-разработки"
+                },
+                {
+                    "icon": "python",
+                    "name": "Python",
+                    "description": "Универсальный язык программирования"
+                }
+            ]
+        },
+        {
+            "name": "Back-End разработка",
+            "items": [
+                {
+                    "icon": "nodejs",
+                    "name": "Node.js",
+                    "description": "Среда JavaScript для серверной разработки"
+                },
+                {
+                    "icon": "express",
+                    "name": "Express.js",
+                    "description": "Веб-фреймворк для Node.js"
+                },
+                {
+                    "icon": "mongodb",
+                    "name": "MongoDB",
+                    "description": "База данных NoSQL"
+                },
+                {
+                    "icon": "sql",
+                    "name": "SQL",
+                    "description": "Управление реляционными базами данных"
+                },
+                {
+                    "icon": "php",
+                    "name": "PHP",
+                    "description": "Скриптовый язык серверной стороны"
+                }
+            ]
+        },
+        {
+            "name": "Хакер",
+            "items": [
+                {
+                    "icon": "cybersecurity",
+                    "name": "Кибербезопасность",
+                    "description": "Основы кибербезопасности и методы защиты"
+                },
+                {
+                    "icon": "ethicalhacking",
+                    "name": "Этический хакинг",
+                    "description": "Этический хакинг и тестирование систем"
+                },
+                {
+                    "icon": "networksecurity",
+                    "name": "Сетевая безопасность",
+                    "description": "Сетевая безопасность и защита от угроз"
+                },
+                {
+                    "icon": "pentesting",
+                    "name": "Penetration Testing",
+                    "description": "Выявление и тестирование уязвимостей"
+                },
+                {
+                    "icon": "securitytools",
+                    "name": "Security Tools",
+                    "description": "Инструменты и программы для безопасности"
+                }
+            ]
+        }
+    ]
+}

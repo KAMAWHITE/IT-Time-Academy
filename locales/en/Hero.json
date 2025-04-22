@@ -1,0 +1,13 @@
+{
+    "title": "A reliable future based on experience",
+    "text": "IT Time is an academy of modern professions. We teach using the latest technologies and real projects with the guidance of experienced professionals. Our goal is to turn you into a highly paid IT specialist.",
+    "BtnText": "Submit an application",
+    "tools": [
+      { "icon": "react", "text": "React" },
+      { "icon": "node", "text": "Node.js" },
+      { "icon": "git", "text": "Git" },
+      { "icon": "python", "text": "Python" },
+      { "icon": "html", "text": "HTML5" },
+      { "icon": "css", "text": "CSS3" }
+    ]
+  }

@@ -1,0 +1,42 @@
+{
+    "It_Time_Academy": {
+        "title": "IT Time Academy",
+        "text": "Учебный центр, обучающий современным IT-профессиям на профессиональном уровне. Изучайте профессии будущего вместе с нами!",
+        "icons": {
+            "icon1": "facebook",
+            "icon2": "instagram",
+            "icon3": "telegram",
+            "icon4": "youtube"
+        }
+    },
+    "Kurslar": {
+        "title": "Курсы",
+        "link1": "Главная",
+        "link2": "Курсы",
+        "link3": "Менторы",
+        "link4": "О нас",
+        "link5": "Контакты"
+    },
+    "Contacts": {
+        "title": "Связаться",
+        "div1": {
+            "icon": "location",
+            "text": "Ташкент, проспект Амира Темура, 100А."
+        },
+        "div2": {
+            "icon": "phone",
+            "text": "+998 (94) 782 00 92"
+        },
+        "div3": {
+            "icon": "email",
+            "text": "ittimeacademy@gmail.com"
+        },
+        "div4": {
+            "icon": "time",
+            "text": "Пн-Сб: 09:00 - 22:00"
+        }
+    },
+    "text1": "2025 IT Time Academy Все права защищены",
+    "text2": "Политика конфиденциальности",
+    "text3": "Условия использования"
+}

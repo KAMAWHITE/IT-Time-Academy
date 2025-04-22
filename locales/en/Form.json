@@ -1,0 +1,62 @@
+{
+    "tabs": {
+      "kurs": "Enroll in a Course",
+      "ish": "Apply for a Job"
+    },
+    "kurs": {
+      "title": "Join Our Courses",
+      "description": "Learn modern professions from professional instructors and find your place in the IT industry!",
+      "features": [
+        {
+          "title": "Professional Education",
+          "description": "Gain knowledge from experienced teachers"
+        },
+        {
+          "title": "Practical Experience",
+          "description": "Work on real projects"
+        },
+        {
+          "title": "Career Support",
+          "description": "Assistance in developing your career"
+        }
+      ],
+      "formTitle": "Course Enrollment",
+      "form": {
+        "name": "Full Name",
+        "phone": "Phone Number",
+        "course": "Select a Course",
+        "message": "Additional Message",
+        "submit": "Submit"
+      }
+    },
+    "ish": {
+      "title": "Want to Get Hired?",
+      "description": "Submit your resume and connect with us. After a successful interview, you can start working!",
+      "features": [
+        {
+          "title": "Guaranteed Job",
+          "description": "We help you find a job that matches your qualifications"
+        },
+        {
+          "title": "Competitive Salary",
+          "description": "High income and opportunities in the IT industry"
+        },
+        {
+          "title": "Career Growth",
+          "description": "Continuous development and new opportunities"
+        }
+      ],
+      "formTitle": "Submit Resume",
+      "form": {
+        "name": "Full Name",
+        "phone": "Phone Number",
+        "email": "Email Address",
+        "about": "About Yourself",
+        "experience": "Work Experience",
+        "skills": "Skills",
+        "fileSelect": "Select File",
+        "fileNotSelected": "No File Selected",
+        "submit": "Submit"
+      }
+    }
+  }

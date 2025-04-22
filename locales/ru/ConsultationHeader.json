@@ -1,0 +1,17 @@
+{
+    "modalTitle": "Бесплатная консультация",
+    "modalDescription": "Заполните форму, и мы свяжемся с вами",
+    "fields": {
+        "nameLabel": "Ваше имя",
+        "courseLabel": "Выберите курс",
+        "phoneLabel": "",
+        "phonePlaceholder": "+998"
+    },
+    "button": "Отправить",
+    "courseOptions": [
+        "Frontend",
+        "Backend",
+        "Мобильная разработка",
+        "UI/UX Дизайн"
+    ]
+}

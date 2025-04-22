@@ -1,0 +1,13 @@
+{
+    "title": "Tajribaga asoslangan ishonchli kelajak",
+    "text": "IT Time - zamonaviy kasblar akademiyasi. Biz eng so'nggi texnologiyalar va real loyihalar yordamida tajribali mutaxassislar yordamida o'qitamiz. Bizning maqsadimiz - sizni yuqori maoshli IT mutaxassisiga aylantirish.",
+    "BtnText": "Arizani yuborish",
+    "tools": [
+      { "icon": "react", "text": "React" },
+      { "icon": "node", "text": "Node.js" },
+      { "icon": "git", "text": "Git" },
+      { "icon": "python", "text": "Python" },
+      { "icon": "html", "text": "HTML5" },
+      { "icon": "css", "text": "CSS3" }
+    ]
+  }

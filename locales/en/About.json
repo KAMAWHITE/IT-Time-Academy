@@ -1,0 +1,29 @@
+{
+    "BigTitle": "Why choose us?",
+    "Cards": [
+        {
+            "title": "No funds? - We have a solution!",
+            "text": "If you don’t have enough funds to attend the courses, don’t worry. We’ll help you solve this issue."
+        },
+        {
+            "title": "Sell your knowledge successfully!",
+            "text": "We not only provide knowledge but also help you sell it successfully and kickstart your career."
+        },
+        {
+            "title": "Quality education from top professionals!",
+            "text": "Our teachers are professionals with real-world experience in their fields."
+        },
+        {
+            "title": "Practice, real projects, and a portfolio!",
+            "text": "During the course, you’ll work on real projects and build your portfolio."
+        },
+        {
+            "title": "Modern environment, free coworking, and Wi-Fi",
+            "text": "A comfortable and modern learning environment, free coworking space, and high-speed internet are at your disposal."
+        },
+        {
+            "title": "Certificate",
+            "text": "Every student who successfully completes the course receives a certificate that meets international standards."
+        }
+    ]
+}

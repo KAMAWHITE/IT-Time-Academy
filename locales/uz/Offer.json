@@ -1,0 +1,50 @@
+{
+    "bonus1": "BONUS",
+    "bonus2": "500000",
+    "bonus3": "so'm",
+    "offer": "Maxsus Taklif",
+    "title": "Do'stingiz bilan birga kelajakni quring!",
+    "text": "IT Time Academy'da o'qish - bu kelajakga investitsiya! Do'stingizni taklif qiling va 500 ming so'm bonus oling.",
+    "sticky": "sticky",
+    "div1": {
+        "icon": "money",
+        "text": "Har bir do'stingiz uchun 500 000 so'm mukofot"
+    },
+    "div2": {
+        "icon": "cap",
+        "text": "Do'stingizga 20% chegirma"
+    },
+    "div3": {
+        "icon": "raketa",
+        "text": "Professional mentorlar bilan birga o'qish"
+    },
+    "div4": {
+        "icon": "star",
+        "text": "Zamonaviy dasturlash ko'nikmalari"
+    },
+    "BtnText": "Batafsil",
+    "BtnIcon": "strelka",
+    "info": "* Aksiya cheklangan vaqtgacha amal qiladi",
+    "modal": {
+        "title": "Super aksiya!",
+        "text": "Do'stingizni taklif qiling va bonus oling!",
+        "action": {
+            "title": "Aksiya shartlari:",
+            "icon": "sticky_",
+            "text1": "Siz bizning talabamiz (hozirgi yoki sobiq) kamida 1 oy bo'lishingiz kerak",
+            "text2": "Do'stingizni akademiyamizda o'qishga taklif qiling"
+        },
+        "bonus": {
+            "div1": {
+                "icon": "money",
+                "text": "Siz keyingi to'lov yoki kurs uchun 500 000 so'm olasiz"
+            },
+            "div2": {
+                "icon": "gift",
+                "text": "Do'stingiz o'qish uchun 20% chegirma oladi"
+            }
+        },
+        "info": "* Aksiya barcha shartlar bajarilganda amal qiladi"
+    },
+    "bonus": "Sizning bonuslaringiz:"
+}

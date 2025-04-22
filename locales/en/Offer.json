@@ -1,0 +1,50 @@
+{
+    "bonus1": "BONUS",
+    "bonus2": "500000",
+    "bonus3": "sum",
+    "offer": "Special Offer",
+    "title": "Build the Future with Your Friend!",
+    "text": "Studying at IT Time Academy is an investment in the future! Invite a friend and get a 500,000 sum bonus.",
+    "sticky": "sticky",
+    "div1": {
+        "icon": "money",
+        "text": "Reward of 500,000 sum for each friend"
+    },
+    "div2": {
+        "icon": "cap",
+        "text": "20% discount for your friend"
+    },
+    "div3": {
+        "icon": "raketa",
+        "text": "Study with professional mentors"
+    },
+    "div4": {
+        "icon": "star",
+        "text": "Modern programming skills"
+    },
+    "BtnText": "Learn More",
+    "BtnIcon": "strelka",
+    "info": "* Offer valid for a limited time",
+    "modal": {
+        "title": "Super Offer!",
+        "text": "Invite a friend and get a bonus!",
+        "action": {
+            "title": "Offer Terms:",
+            "icon": "sticky_",
+            "text1": "You must be our student (current or former) for at least 1 month",
+            "text2": "Invite your friend to study at our academy"
+        },
+        "bonus": {
+            "div1": {
+                "icon": "money",
+                "text": "You get 500,000 sum for the next payment or course"
+            },
+            "div2": {
+                "icon": "gift",
+                "text": "Your friend gets a 20% discount on studies"
+            }
+        },
+        "info": "* Offer valid upon meeting all conditions"
+    },
+    "bonus": "Your bonuses:"
+}

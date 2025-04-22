@@ -1,0 +1,11 @@
+{
+    "BigTitle": "Our Team",
+    "FrontEnd": {
+        "title": "Frontend Development",
+        "text": "Dive into the world of modern frontend development! Learn React, JavaScript, and create stunning user interfaces with the guidance of experienced mentors."
+    },
+    "BackEnd": {
+        "title": "Backend Development",
+        "text": "Become an expert in backend development! Learn to work with databases, APIs, and server architecture. Build reliable and scalable applications."
+    }
+}

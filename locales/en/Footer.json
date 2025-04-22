@@ -1,0 +1,42 @@
+{
+    "It_Time_Academy": {
+        "title": "IT Time Academy",
+        "text": "A training center that teaches modern IT professions at a professional level. Learn the professions of the future with us!",
+        "icons": {
+            "icon1": "facebook",
+            "icon2": "instagram",
+            "icon3": "telegram",
+            "icon4": "youtube"
+        }
+    },
+    "Kurslar": {
+        "title": "Courses",
+        "link1": "Home",
+        "link2": "Courses",
+        "link3": "Mentors",
+        "link4": "About Us",
+        "link5": "Contact"
+    },
+    "Contacts": {
+        "title": "Contact",
+        "div1": {
+            "icon": "location",
+            "text": "Tashkent, Amir Temur Avenue, 100A."
+        },
+        "div2": {
+            "icon": "phone",
+            "text": "+998 (94) 782 00 92"
+        },
+        "div3": {
+            "icon": "email",
+            "text": "ittimeacademy@gmail.com"
+        },
+        "div4": {
+            "icon": "time",
+            "text": "Mon-Sat: 09:00 - 22:00"
+        }
+    },
+    "text1": "2025 IT Time Academy All rights reserved",
+    "text2": "Privacy Policy",
+    "text3": "Terms of Use"
+}

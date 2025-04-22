@@ -1,0 +1,100 @@
+{
+    "title": "Bizning kurslar",
+    "categories": [
+        {
+            "name": "Front-End dasturlash",
+            "items": [
+                {
+                    "icon": "react",
+                    "name": "React.js",
+                    "description": "Zamonaviy foydalanuvchi interfeyslarini yaratish uchun JavaScript kutubxonasi"
+                },
+                {
+                    "icon": "vue",
+                    "name": "Vue.js",
+                    "description": "Progressive JavaScript freymvorki"
+                },
+                {
+                    "icon": "angular",
+                    "name": "Angular.js",
+                    "description": "Veb-ilovalarni yaratish platformasi"
+                },
+                {
+                    "icon": "javascript",
+                    "name": "JavaScript",
+                    "description": "Veb-dasturlash uchun asosiy dasturlash tili"
+                },
+                {
+                    "icon": "htmlcss",
+                    "name": "HTML/CSS",
+                    "description": "Veb-dasturlashning poydevori"
+                },
+                {
+                    "icon": "python",
+                    "name": "Python",
+                    "description": "Universal dasturlash tili"
+                }
+            ]
+        },
+        {
+            "name": "Back-End dasturlash",
+            "items": [
+                {
+                    "icon": "nodejs",
+                    "name": "Node.js",
+                    "description": "Server tomonidagi dasturlash uchun JavaScript muhiti"
+                },
+                {
+                    "icon": "express",
+                    "name": "Express.js",
+                    "description": "Node.js uchun veb-freymvork"
+                },
+                {
+                    "icon": "mongodb",
+                    "name": "MongoDB",
+                    "description": "NoSQL ma'lumotlar bazasi"
+                },
+                {
+                    "icon": "sql",
+                    "name": "SQL",
+                    "description": "Relyatsion ma'lumotlar bazasini boshqarish"
+                },
+                {
+                    "icon": "php",
+                    "name": "PHP",
+                    "description": "Server tomonidagi skript tili"
+                }
+            ]
+        },
+        {
+            "name": "Xaker",
+            "items": [
+                {
+                    "icon": "cybersecurity",
+                    "name": "Kiberxavfsizlik",
+                    "description": "Kiberxavfsizlik asoslari va himoya usullari"
+                },
+                {
+                    "icon": "ethicalhacking",
+                    "name": "Etik hacking",
+                    "description": "Axloqiy xacking va tizimlarni testlash"
+                },
+                {
+                    "icon": "networksecurity",
+                    "name": "Tarmoq xavfsizligi",
+                    "description": "Tarmoq xavfsizligi va tahdidlardan himoya"
+                },
+                {
+                    "icon": "pentesting",
+                    "name": "Penetration Testing",
+                    "description": "Zaifliklarni aniqlash va testlash"
+                },
+                {
+                    "icon": "securitytools",
+                    "name": "Security Tools",
+                    "description": "Xavfsizlik vositalari va dasturlar"
+                }
+            ]
+        }
+    ]
+}

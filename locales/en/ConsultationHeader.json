@@ -1,0 +1,17 @@
+{
+    "modalTitle": "Free Consultation",
+    "modalDescription": "Fill out the form, and we will contact you",
+    "fields": {
+        "nameLabel": "Your Name",
+        "courseLabel": "Select a Course",
+        "phoneLabel": "",
+        "phonePlaceholder": "+998"
+    },
+    "button": "Submit",
+    "courseOptions": [
+        "Frontend",
+        "Backend",
+        "Mobile Development",
+        "UI/UX Design"
+    ]
+}

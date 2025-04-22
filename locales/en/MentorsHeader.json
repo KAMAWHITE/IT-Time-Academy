@@ -1,0 +1,115 @@
+{
+    "BigTitle": "Our Mentors",
+    "BigText": "Experienced professionals who will help you achieve success",
+    "Mentors": [
+        {
+            "fullname": "Rustambek Mamadaliyev",
+            "profession": "Senior Frontend Instructor",
+            "info": "With over ten years of programming experience and five years of teaching, I have trained more than 500 students to become professional developers. I possess deep knowledge and practical experience in modern frontend technologies and programming methodologies.",
+            "tools": {
+                "title": "Specialization",
+                "tools": [
+                    "ReactJS",
+                    "Vue.js",
+                    "Angular",
+                    "TypeScript",
+                    "Node.js",
+                    "AWS",
+                    "CI/CD"
+                ]
+            },
+            "links": {
+                "link1": "linkedin",
+                "link2": "telegram",
+                "link3": "github"
+            }
+        },
+        {
+            "fullname": "G'ofurova Gulbahor",
+            "profession": "Graphic Design Instructor",
+            "info": "As an instructor with extensive experience in graphic design, I approach teaching modern design software and technologies with great enthusiasm.",
+            "tools": {
+                "title": "Specialization",
+                "tools": [
+                    "Adobe Photoshop",
+                    "Illustrator",
+                    "Figma",
+                    "UI/UX",
+                    "After Effects",
+                    "Premiere Pro",
+                    "CorelDraw"
+                ]
+            },
+            "links": {
+                "link1": "linkedin",
+                "link2": "telegram",
+                "link3": "github"
+            }
+        },
+        {
+            "fullname": "Islombek Rahimjonov",
+            "profession": "Frontend Instructor",
+            "info": "As an instructor with extensive experience in frontend development, I approach teaching modern web technologies with great enthusiasm.",
+            "tools": {
+                "title": "Specialization",
+                "tools": [
+                    "ReactJS",
+                    "JavaScript",
+                    "Redux",
+                    "Material UI",
+                    "Bootstrap",
+                    "Git",
+                    "Webpack"
+                ]
+            },
+            "links": {
+                "link1": "linkedin",
+                "link2": "telegram",
+                "link3": "github"
+            }
+        },
+        {
+            "fullname": "Behruzbek Nazarov",
+            "profession": "Frontend Instructor",
+            "info": "As an experienced frontend development instructor, I have extensive experience in teaching students modern web technologies.",
+            "tools": {
+                "title": "Specialization",
+                "tools": [
+                    "ReactJS",
+                    "TypeScript",
+                    "Next.js",
+                    "Redux",
+                    "Tailwind CSS",
+                    "Git"
+                ]
+            },
+            "links": {
+                "link1": "linkedin",
+                "link2": "telegram",
+                "link3": "github"
+            }
+        },
+        {
+            "fullname": "Xolmatov Dilshod",
+            "profession": "Python Instructor",
+            "info": "As an experienced instructor in Python programming and backend technologies, I have extensive experience in teaching students the fundamentals of modern programming.",
+            "tools": {
+                "title": "Specialization",
+                "tools": [
+                    "Python",
+                    "Django",
+                    "FastAPI",
+                    "PostgreSQL",
+                    "Docker",
+                    "Git",
+                    "Linux"
+                ]
+            },
+            "links": {
+                "link1": "linkedin",
+                "link2": "telegram",
+                "link3": "github"
+            }
+        }
+    ]
+}

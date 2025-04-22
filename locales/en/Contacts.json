@@ -1,0 +1,23 @@
+{
+    "BigTitle": "Contact Us",
+    "div1": {
+        "icon": "telegram",
+        "title": "Telegram",
+        "text": "@it_time"
+    },
+    "div2": {
+        "icon": "phone",
+        "title": "Phone",
+        "text": "+998 (94) 782 00 92"
+    },
+    "div3": {
+        "icon": "email",
+        "title": "Email",
+        "text": "ittimeacademy@gmail.com"
+    },
+    "div4": {
+        "icon": "location",
+        "title": "Address",
+        "text": "Tashkent, Amir Temur Avenue, 100A"
+    }
+}

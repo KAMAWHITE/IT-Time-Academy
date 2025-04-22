@@ -1,0 +1,68 @@
+{
+    "data": {
+        "icon": "calendar",
+        "text": "2017 yildan buyon xizmatingizda"
+    },
+    "BigTitle": "IT TIME ACADEMY",
+    "BigText": "Zamonaviy IT ta'lim markazi - kelajak kasblarini o'rganish uchun eng yaxshi tanlov",
+    "text": "IT TIME ACADEMY - O'zbekistonning eng yirik va ishonchli dasturlash maktablaridan biri. 2017-yildan buyon biz minglab yoshlarga zamonaviy IT kasblari bo'yicha sifatli ta'lim berib kelmoqdamiz. Bizning maqsadimiz - har bir o'quvchiga nafaqat dasturlashni o'rgatish, balki ularni kelajakdagi muvaffaqiyatli karyeraga tayyorlashdir. Biz har bir talabaning individual rivojlanishiga alohida e'tibor qaratamiz va zamonaviy ta'lim metodlaridan foydalanamiz.",
+    "Cards": [
+        {
+            "icon": "noutbook",
+            "title": "Zamonaviy dasturlash",
+            "text": "Eng so'nggi texnologiyalar va dasturlash tillarini o'rgatamiz"
+        },
+        {
+            "icon": "teacher",
+            "title": "Tajribali o'qituvchilar",
+            "text": "Professional mentorlar va amaliyotchi dasturchilardan ta'lim"
+        },
+        {
+            "icon": "friends",
+            "title": "Amaliy tajriba",
+            "text": "Real loyihalar ustida ishlash va portfolio yaratish imkoniyati"
+        }
+    ],
+    "Stats": {
+        "text1": "Muvaffaqiyatli bitiruvchilar",
+        "text2": "Professional o'qituvchilar",
+        "text3": "Zamonaviy kurslar",
+        "text4": "Ishga joylashish darajasi"
+    },
+    "AcademyTitle": "Top IT akademiya",
+    "Academy": [
+        {
+            "icon": "globus",
+            "title": "Xalqaro sertifikatlar",
+            "text": "Xalqaro standartlarga mos sertifikatlar bilan ta'minlaymiz"
+        },
+        {
+            "icon": "friends",
+            "title": "IT kompaniyalar bilan hamkorlik",
+            "text": "Yetakchi IT kompaniyalar bilan hamkorlikda ish olib boramiz"
+        },
+        {
+            "icon": "books",
+            "title": "Amaliy ta'lim",
+            "text": "Nazariy bilimlar bilan birga amaliy ko'nikmalarni shakllantiramiz"
+        }
+    ],
+    "ValuesTitle": "Bizning qadriyatlarimiz",
+    "Values": [
+        {
+            "icon": "people",
+            "title": "Individual yondashuv",
+            "text": "Har bir talabaga alohida e'tibor va yordam"
+        },
+        {
+            "icon": "quality",
+            "title": "Sifatli ta'lim",
+            "text": "Xalqaro standartlarga mos o'quv dasturi"
+        },
+        {
+            "icon": "raketa",
+            "title": "Karera qo'llab-quvvatlash",
+            "text": "Ishga joylashishda yordam va maslahatlar"
+        }
+    ]
+}

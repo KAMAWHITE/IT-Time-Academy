@@ -1,0 +1,17 @@
+{
+    "modalTitle": "Bepul konsultatsiya",
+    "modalDescription": "Formani to'ldiring va biz siz bilan bog'lanamiz",
+    "fields": {
+        "nameLabel": "Ismingiz",
+        "courseLabel": "Kursni tanlang",
+        "phoneLabel": "",
+        "phonePlaceholder": "+998"
+    },
+    "button": "Yuborish",
+    "courseOptions": [
+        "Frontend",
+        "Backend",
+        "Mobile Development",
+        "UI/UX Design"
+    ]
+}

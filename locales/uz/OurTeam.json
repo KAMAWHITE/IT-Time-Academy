@@ -1,0 +1,11 @@
+{
+    "BigTitle": "Bizning jamoa",
+    "FrontEnd": {
+        "title": "Frontend dasturlash",
+        "text": "Zamonaviy frontend dasturlash dunyosiga sho'ng'ing! React, JavaScript-ni o'rganing va tajribali ustozlar yordamida ajoyib foydalanuvchi interfeyslarini yarating."
+    },
+    "BackEnd": {
+        "title": "Backend dasturlash",
+        "text": "Backend dasturlashda ekspert bo'ling! Ma'lumotlar bazasi, API va server arxitekturasi bilan ishlashni o'rganing. Ishonchli va kengaytiriladigan ilovalarni yarating."
+    }
+}

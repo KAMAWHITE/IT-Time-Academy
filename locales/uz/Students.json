@@ -1,0 +1,42 @@
+[
+    {
+      "name": "AKBAR",
+      "status": "Bitiruvchi",
+      "occupation": "Frontend dasturchi",
+      "about": "Kursni muvaffaqiyatli tugatdi va IT kompaniyasida ish topdi",
+      "skills": ["HTML", "CSS", "JavaScript", "React"],
+      "company": "LIMSA",
+      "incomeGrowth": "700+",
+      "videoSrc": "/intervyu.mp4"
+    },
+    {
+      "name": "ASILBEK",
+      "status": "Bitiruvchi",
+      "occupation": "Frontend dasturchi",
+      "about": "Kursni muvaffaqiyatli tugatdi va IT kompaniyasida ish topdi",
+      "skills": ["HTML", "SASS", "TypeScript", "React", "RestAPI"],
+      "company": "MARSITSCHOOL",
+      "incomeGrowth": "900+",
+      "videoSrc": "/intervyu.mp4"
+    },
+    {
+      "name": "MUHAMMADISLOM",
+      "status": "Bitiruvchi",
+      "occupation": "Frontend dasturchi",
+      "about": "Kursni muvaffaqiyatli tugatdi va IT kompaniyasida ish topdi",
+      "skills": ["HTML", "SASS", "JavaScript", "React", "TAILWIND", "TypeScript"],
+      "company": "IT WORKS",
+      "incomeGrowth": "750+",
+      "videoSrc": "/intervyu.mp4"
+    },
+    {
+      "name": "SAMANDAR",
+      "status": "Bitiruvchi",
+      "occupation": "Frontend dasturchi",
+      "about": "Kursni muvaffaqiyatli tugatdi va IT kompaniyasida ish topdi",
+      "skills": ["HTML", "SASS", "JavaScript", "Vue 3", "Nuxt", "TypeScript"],
+      "company": "GREATSOFT",
+      "incomeGrowth": "650+",
+      "videoSrc": "/intervyu.mp4"
+    }
+  ]

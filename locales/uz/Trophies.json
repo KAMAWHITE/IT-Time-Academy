@@ -1,0 +1,19 @@
+{
+    "title": "BIZNING YUTUQLARIMIZ",
+    "stats": [
+      { "icon": "🎓", "value": "5+", "description": "Zamonaviy kurslar" },
+      { "icon": "👨‍🎓", "value": "500+", "description": "Bitiruvchilar" },
+      { "icon": "💼", "value": "80%", "description": "Ishga joylashish darajasi" },
+      { "icon": "⭐", "value": "4.9", "description": "O'rtacha reyting" }
+    ],
+    "mainSection": {
+      "title": "IT TIME ACADEMY - KELAJAK KASBLARINI O'RGANING",
+      "description": "Bizning o'quv markazimiz zamonaviy dasturiy texnologiyalari, mobil grafikalar va SMM sohasida professional ta'lim beradi. Tajribali o'qituvchilar va amaliy loyihalar orqali siz zamonaviy mutaxassis bo'lib yetishasiz."
+    },
+    "bottomCards": [
+      { "icon": "🏆", "description": "Top IT akademiya" },
+      { "icon": "📜", "description": "Xalqaro sertifikatlar" },
+      { "icon": "🤝", "description": "IT kompaniyalar bilan hamkorlik" },
+      { "icon": "📚", "description": "Amaliy ta'lim" }
+    ]
+  }
