@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from 'react';
-import AOS from 'aos'; // AOS import qilindi
-import 'aos/dist/aos.css'; // AOS CSS import qilindi
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import WalletIcon from './WalletIcon';
 import AboutUz from '../../../locales/uz/About.json';
 import AboutRu from '../../../locales/ru/About.json';
@@ -32,12 +32,10 @@ const SolutionCard = ({ title, text }) => (
 
 const SolutionSection = () => {
   const { til } = useApp();
-
-  // AOS ni ishga tushirish
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animatsiya davomiyligi
-      once: true, // Animatsiya faqat bir marta ishlaydi
+      duration: 1000,
+      once: true,
     });
   }, []);
 

@@ -1,14 +1,9 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import AOS from 'aos'; // AOS import qilindi
-import 'aos/dist/aos.css'; // AOS CSS import qilindi
-import { FaReact } from "react-icons/fa";
-import { FaNode } from "react-icons/fa";
-import { FaGitAlt } from "react-icons/fa";
-import { FaPython } from "react-icons/fa";
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { FaReact, FaNode, FaGitAlt, FaPython, FaHtml5, FaCss3Alt } from "react-icons/fa";
 import HeroUz from '../../../locales/uz/Hero.json';
 import HeroRu from '../../../locales/ru/Hero.json';
 import HeroEn from '../../../locales/en/Hero.json';
@@ -17,6 +12,10 @@ import OptionsUz from '../../../locales/uz/ConsultationHeader.json';
 import OptionsRu from '../../../locales/ru/ConsultationHeader.json';
 import OptionsEn from '../../../locales/en/ConsultationHeader.json';
 import OptionsUzk from '../../../locales/uzk/ConsultationHeader.json';
+import ModalUz from '../../../locales/uz/Modal.json';
+import ModalRu from '../../../locales/ru/Modal.json';
+import ModalEn from '../../../locales/en/Modal.json';
+import ModalUzk from '../../../locales/uzk/Modal.json';
 import { useApp } from "@/app/LanguageContext";
 
 export default function Hero() {
@@ -29,18 +28,16 @@ export default function Hero() {
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(false);
 
-  const token = '7147216021:AAGMuN5Lt37qcPAY62u6eccBjVcDKwMK0nE';
-  const chatId = '7317699848';
+  const token = process.env.NEXT_PUBLIC_TELEGRAM_TOKEN || '7147216021:AAGMuN5Lt37qcPAY62u6eccBjVcDKwMK0nE';
+  const chatId = process.env.NEXT_PUBLIC_TELEGRAM_CHAT_ID || '7317699848';
 
-  // AOS ni ishga tushirish
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animatsiya davomiyligi
-      once: true, // Animatsiya faqat bir marta ishlaydi
+      duration: 1000,
+      once: true,
     });
   }, []);
 
-  // Tilga qarab mos JSON faylini tanlash
   const content = {
     uz: HeroUz,
     ru: HeroRu,
@@ -55,6 +52,13 @@ export default function Hero() {
     uzk: OptionsUzk,
   }[til] || OptionsUz;
 
+  const modals = {
+    uz: ModalUz,
+    ru: ModalRu,
+    en: ModalEn,
+    uzk: ModalUzk,
+  }[til] || ModalUz;
+
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => {
     setIsModalOpen(false);
@@ -65,9 +69,21 @@ export default function Hero() {
     setSuccess(false);
   };
 
+  const handlePhoneChange = (e) => {
+    const value = e.target.value;
+    if (/^\d*$/.test(value)) {
+      setPhone(value);
+    }
+  };
+
   const handleSubmit = async () => {
     if (!name || !course || !phone) {
-      setError('Iltimos, barcha maydonlarni to‘ldiring!');
+      setError(modals?.error || 'Iltimos, barcha maydonlarni to‘ldiring!');
+      return;
+    }
+
+    if (!/^\d{9}$/.test(phone)) {
+      setError(modals?.invalidPhone || 'Telefon raqami 9 raqamdan iborat bo‘lishi kerak!');
       return;
     }
 
@@ -101,12 +117,12 @@ export default function Hero() {
         setTimeout(() => {
           closeModal();
           setSuccess(false);
-        }, 2000); // Modal 2 soniyadan so‘ng yopiladi
+        }, 2000);
       } else {
-        throw new Error('Ma\'lumot yuborishda xatolik yuz berdi');
+        throw new Error(modals?.error || 'Ma\'lumot yuborishda xatolik yuz berdi');
       }
     } catch (err) {
-      setError(err.message || 'Nimadir xato ketdi');
+      setError(err.message || modals?.error || 'Nimadir xato ketdi');
     } finally {
       setLoading(false);
     }
@@ -114,7 +130,6 @@ export default function Hero() {
 
   return (
     <>
-      {/* Main Content */}
       <div className={`w-full grid grid-cols-1 lg:grid-cols-2 pt-2 ${isModalOpen ? 'blur-sm' : ''}`}>
         <div className='p-10 space-y-5 pt-20'>
           <div data-aos="fade-up" data-aos-duration="1000">
@@ -161,7 +176,6 @@ export default function Hero() {
         ))}
       </div>
 
-      {/* Modal */}
       {isModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center z-50">
           <div className="absolute inset-0 bg-black opacity-50" onClick={closeModal}></div>
@@ -199,21 +213,23 @@ export default function Hero() {
               <div className="flex items-center space-x-2">
                 <span className="text-gray-600">{optionsContent.fields.phonePlaceholder}</span>
                 <input
-                  type="text"
+                  type="tel"
                   placeholder={optionsContent.fields.phoneLabel || "Telefon raqamingiz"}
                   value={phone}
-                  onChange={(e) => setPhone(e.target.value)}
+                  onChange={handlePhoneChange}
+                  pattern="[0-9]*"
+                  maxLength="9"
                   className="w-full p-3 border border-gray-500 rounded-lg focus:outline-none focus:border-white focus:ring-2 focus:ring-red-600"
                 />
               </div>
               {error && <p className="text-red-500 text-sm">{error}</p>}
-              {success && <p className="text-green-500 text-sm">Ma'lumotlar muvaffaqiyatli yuborildi!</p>}
+              {success && <p className="text-green-500 text-sm">{modals.muvaffaqiyatli}</p>}
               <button
                 onClick={handleSubmit}
                 disabled={loading}
                 className={`w-full py-3 ${loading ? 'bg-gray-400' : 'bg-red-600'} text-white rounded-lg font-semibold`}
               >
-                {loading ? 'Yuborilmoqda...' : optionsContent.button}
+                {loading ? modals.sending : optionsContent.button}
               </button>
             </div>
           </div>

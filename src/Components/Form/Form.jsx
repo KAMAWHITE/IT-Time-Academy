@@ -1,35 +1,34 @@
 "use client";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import AOS from 'aos'; // AOS import qilindi
-import 'aos/dist/aos.css'; // AOS CSS import qilindi
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import FormUz from "../../../locales/uz/Form.json";
 import FormRu from "../../../locales/ru/Form.json";
 import FormEn from "../../../locales/en/Form.json";
 import FormUzk from "../../../locales/uzk/Form.json";
 import { useApp } from "@/app/LanguageContext";
-import { FaGraduationCap } from "react-icons/fa6";
-import { FaLaptop } from "react-icons/fa";
-import { FaStar } from "react-icons/fa";
+import { FaGraduationCap, FaLaptop, FaStar } from "react-icons/fa6";
 import OptionsUz from '../../../locales/uz/ConsultationHeader.json';
 import OptionsRu from '../../../locales/ru/ConsultationHeader.json';
 import OptionsEn from '../../../locales/en/ConsultationHeader.json';
 import OptionsUzk from '../../../locales/uzk/ConsultationHeader.json';
 import { MdWork } from "react-icons/md";
-import { FaMoneyBillAlt } from "react-icons/fa";
-import { FaRocket } from "react-icons/fa";
+import { FaMoneyBillAlt, FaRocket } from "react-icons/fa";
+import ModalUz from '../../../locales/uz/Modal.json';
+import ModalRu from '../../../locales/ru/Modal.json';
+import ModalEn from '../../../locales/en/Modal.json';
+import ModalUzk from '../../../locales/uzk/Modal.json';
 
 export default function Form() {
   const [activeTab, setActiveTab] = useState("kurs");
   const { til } = useApp();
 
-  // Kurs tab uchun state'lar
   const [kursName, setKursName] = useState("");
   const [kursPhone, setKursPhone] = useState("");
   const [kursCourse, setKursCourse] = useState("");
   const [kursMessage, setKursMessage] = useState("");
 
-  // Ish tab uchun state'lar
   const [ishName, setIshName] = useState("");
   const [ishPhone, setIshPhone] = useState("");
   const [ishEmail, setIshEmail] = useState("");
@@ -38,19 +37,17 @@ export default function Form() {
   const [ishSkills, setIshSkills] = useState("");
   const [ishFile, setIshFile] = useState(null);
 
-  // Yuborish jarayoni uchun state'lar
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(false);
 
-  const token = '7147216021:AAGMuN5Lt37qcPAY62u6eccBjVcDKwMK0nE';
-  const chatId = '7317699848';
+  const token = process.env.NEXT_PUBLIC_TELEGRAM_TOKEN || '7147216021:AAGMuN5Lt37qcPAY62u6eccBjVcDKwMK0nE';
+  const chatId = process.env.NEXT_PUBLIC_TELEGRAM_CHAT_ID || '7317699848';
 
-  // AOS ni ishga tushirish
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animatsiya davomiyligi
-      once: true, // Animatsiya faqat bir marta ishlaydi
+      duration: 1000,
+      once: true,
     });
   }, []);
 
@@ -68,9 +65,28 @@ export default function Form() {
     uzk: OptionsUzk,
   }[til] || OptionsUz;
 
+  const modals = {
+    uz: ModalUz,
+    ru: ModalRu,
+    en: ModalEn,
+    uzk: ModalUzk,
+  }[til] || ModalUz;
+
+  const handlePhoneChange = (e, setter) => {
+    const value = e.target.value;
+    if (/^\d*$/.test(value)) {
+      setter(value);
+    }
+  };
+
   const handleKursSubmit = async () => {
     if (!kursName || !kursPhone || !kursCourse || !kursMessage) {
-      setError('Iltimos, barcha maydonlarni to‘ldiring!');
+      setError(modals?.error || 'Iltimos, barcha maydonlarni to‘ldiring!');
+      return;
+    }
+
+    if (!/^\d{9}$/.test(kursPhone)) {
+      setError(modals?.invalidPhone || 'Telefon raqami 9 raqamdan iborat bo‘lishi kerak!');
       return;
     }
 
@@ -102,12 +118,12 @@ export default function Form() {
         setKursPhone('');
         setKursCourse('');
         setKursMessage('');
-        setTimeout(() => setSuccess(false), 2000); // 2 soniyadan so‘ng muvaffaqiyat xabari yo‘qoladi
+        setTimeout(() => setSuccess(false), 2000);
       } else {
-        throw new Error('Ma\'lumot yuborishda xatolik yuz berdi');
+        throw new Error(modals?.error || 'Ma\'lumot yuborishda xatolik yuz berdi');
       }
     } catch (err) {
-      setError(err.message || 'Nimadir xato ketdi');
+      setError(err.message || modals?.error || 'Nimadir xato ketdi');
     } finally {
       setLoading(false);
     }
@@ -115,7 +131,12 @@ export default function Form() {
 
   const handleIshSubmit = async () => {
     if (!ishName || !ishPhone || !ishEmail || !ishAbout || !ishExperience || !ishSkills || !ishFile) {
-      setError('Iltimos, barcha maydonlarni to‘ldiring va faylni tanlang!');
+      setError(modals?.error || 'Iltimos, barcha maydonlarni to‘ldiring va faylni tanlang!');
+      return;
+    }
+
+    if (!/^\d{9}$/.test(ishPhone)) {
+      setError(modals?.invalidPhone || 'Telefon raqami 9 raqamdan iborat bo‘lishi kerak!');
       return;
     }
 
@@ -150,12 +171,12 @@ export default function Form() {
         setIshExperience('');
         setIshSkills('');
         setIshFile(null);
-        setTimeout(() => setSuccess(false), 2000); // 2 soniyadan so‘ng muvaffaqiyat xabari yo‘qoladi
+        setTimeout(() => setSuccess(false), 2000);
       } else {
-        throw new Error('Ma\'lumot yuborishda xatolik yuz berdi');
+        throw new Error(modals?.error || 'Ma\'lumot yuborishda xatolik yuz berdi');
       }
     } catch (err) {
-      setError(err.message || 'Nimadir xato ketdi');
+      setError(err.message || modals?.error || 'Nimadir xato ketdi');
     } finally {
       setLoading(false);
     }
@@ -236,10 +257,12 @@ export default function Form() {
                     className="w-1/4 p-3 border border-gray-500 focus:outline-none focus:ring-2 focus:border-white focus:ring-red-500 rounded-lg bg-gray-100"
                   />
                   <input
-                    type="text"
+                    type="tel"
                     placeholder={optionsContent.fields.phoneLabel || "Telefon raqamingiz"}
                     value={kursPhone}
-                    onChange={(e) => setKursPhone(e.target.value)}
+                    onChange={(e) => handlePhoneChange(e, setKursPhone)}
+                    pattern="[0-9]*"
+                    maxLength="9"
                     className="w-3/4 p-3 border border-gray-500 focus:outline-none focus:ring-2 focus:border-white focus:ring-red-500 rounded-lg"
                   />
                 </div>
@@ -263,13 +286,13 @@ export default function Form() {
                   className="w-full p-3 border border-gray-500 focus:outline-none focus:ring-2 focus:border-white focus:ring-red-500 rounded-lg"
                 />
                 {error && activeTab === "kurs" && <p className="text-red-500 text-sm">{error}</p>}
-                {success && activeTab === "kurs" && <p className="text-green-500 text-sm">Ma'lumotlar muvaffaqiyatli yuborildi!</p>}
+                {success && activeTab === "kurs" && <p className="text-green-500 text-sm">{modals.muvaffaqiyatli}</p>}
                 <button
                   onClick={handleKursSubmit}
                   disabled={loading}
                   className={`bg-red-500 text-white w-full py-3 rounded-lg ${loading ? 'opacity-50 cursor-not-allowed' : ''}`}
                 >
-                  {loading ? 'Yuborilmoqda...' : optionsContent.button}
+                  {loading ? modals.sending : optionsContent.button}
                 </button>
               </div>
             </div>
@@ -329,10 +352,12 @@ export default function Form() {
                     className="w-1/4 p-3 border rounded-lg border-gray-500 focus:outline-none focus:ring-2 focus:border-white focus:ring-red-500 bg-gray-100"
                   />
                   <input
-                    type="text"
+                    type="tel"
                     placeholder={optionsContent.fields.phoneLabel || "Telefon raqamingiz"}
                     value={ishPhone}
-                    onChange={(e) => setIshPhone(e.target.value)}
+                    onChange={(e) => handlePhoneChange(e, setIshPhone)}
+                    pattern="[0-9]*"
+                    maxLength="9"
                     className="w-3/4 p-3 border rounded-lg border-gray-500 focus:outline-none focus:ring-2 focus:border-white focus:ring-red-500"
                   />
                 </div>
@@ -383,13 +408,13 @@ export default function Form() {
                   </button>
                 </div>
                 {error && activeTab === "ish" && <p className="text-red-500 text-sm">{error}</p>}
-                {success && activeTab === "ish" && <p className="text-green-500 text-sm">Ma'lumotlar muvaffaqiyatli yuborildi!</p>}
+                {success && activeTab === "ish" && <p className="text-green-500 text-sm">{modals.muvaffaqiyatli}</p>}
                 <button
                   onClick={handleIshSubmit}
                   disabled={loading}
                   className={`bg-red-500 text-white w-full py-3 rounded-lg ${loading ? 'opacity-50 cursor-not-allowed' : ''}`}
                 >
-                  {loading ? 'Yuborilmoqda...' : optionsContent.button}
+                  {loading ? modals.sending : optionsContent.button}
                 </button>
               </div>
             </div>

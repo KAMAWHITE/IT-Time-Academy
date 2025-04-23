@@ -3,43 +3,50 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { useApp } from '@/app/LanguageContext';
-import AOS from 'aos'; // AOS import qilindi
-import 'aos/dist/aos.css'; // AOS CSS import qilindi
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { FaStopwatch } from "react-icons/fa6";
 
 const CoursesSection = () => {
     const { til } = useApp();
     const [data, setData] = useState(null);
     const router = useRouter();
+    const [modal, setModal] = useState('')
 
-    // AOS ni ishga tushirish
     useEffect(() => {
         AOS.init({
-            duration: 1000, // Animatsiya davomiyligi
-            once: true, // Animatsiya faqat bir marta ishlaydi
+            duration: 1000,
+            once: true,
         });
     }, []);
 
     useEffect(() => {
         const loadData = async () => {
             let file;
+            let Mod
             switch (til) {
                 case 'uz':
                     file = await import('../../../locales/uz/CoursesHeader.json');
+                    Mod = await import('../../../locales/uz/Modal.json')
                     break;
                 case 'ru':
                     file = await import('../../../locales/ru/CoursesHeader.json');
+                    Mod = await import('../../../locales/ru/Modal.json')
                     break;
                 case 'en':
                     file = await import('../../../locales/en/CoursesHeader.json');
+                    Mod = await import('../../../locales/en/Modal.json')
                     break;
                 case 'uzk':
                     file = await import('../../../locales/uzk/CoursesHeader.json');
+                    Mod = await import('../../../locales/uzk/Modal.json')
                     break;
                 default:
                     file = await import('../../../locales/uz/CoursesHeader.json');
+                    Mod = await import('../../../locales/uz/Modal.json')
             }
             setData(file.default);
+            setModal(Mod.default)
         };
 
         loadData();
@@ -49,7 +56,7 @@ const CoursesSection = () => {
         <div className="flex justify-center items-center h-screen bg-gray-100">
             <div className="flex flex-col items-center">
                 <div className="w-16 h-16 border-4 border-red-600 border-t-transparent rounded-full animate-spin"></div>
-                <p className="mt-4 text-lg font-semibold text-gray-700 animate-pulse">Yuklanmoqda...</p>
+                <p className="mt-4 text-lg font-semibold text-gray-700 animate-pulse">{modal.loading}</p>
             </div>
         </div>
     );
@@ -79,7 +86,7 @@ const CoursesSection = () => {
 
     return (
         <div className="bg-gray-100 py-10 px-4 flex justify-center items-center">
-            <div data-aos="fade-up" className="max-w-6xl w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div className="max-w-6xl w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 {courses.map((course, index) => {
                     const courseData = data[course.key];
                     return (

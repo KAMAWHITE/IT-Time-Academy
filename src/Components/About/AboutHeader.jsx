@@ -3,58 +3,65 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { FaCode, FaUserGraduate, FaUsers, FaGlobe, FaBook, FaCalendarAlt, FaRocket, FaStar } from 'react-icons/fa';
 import { useApp } from '@/app/LanguageContext';
-import AOS from 'aos'; // AOS import qilindi
-import 'aos/dist/aos.css'; // AOS CSS import qilindi
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const AboutAndAchievementsSection = () => {
     const { til } = useApp();
     const [data, setData] = useState(null);
-    const [counts, setCounts] = useState([0, 0, 0, 0]); // Har bir stat uchun boshlang‘ich qiymatlar
+    const [counts, setCounts] = useState([0, 0, 0, 0]);
+    const [modal, setModal] = useState('');
 
     // AOS ni ishga tushirish
     useEffect(() => {
         AOS.init({
-            duration: 1000, // Animatsiya davomiyligi
-            once: true, // Animatsiya faqat bir marta ishlaydi
+            duration: 1000,
+            once: true,
         });
     }, []);
 
     useEffect(() => {
         const loadData = async () => {
             let file;
+            let Mod;
             switch (til) {
                 case 'uz':
                     file = await import('../../../locales/uz/AboutHeader.json');
+                    Mod = await import('../../../locales/uz/Modal.json')
                     break;
                 case 'ru':
                     file = await import('../../../locales/ru/AboutHeader.json');
+                    Mod = await import('../../../locales/ru/Modal.json')
                     break;
                 case 'en':
                     file = await import('../../../locales/en/AboutHeader.json');
+                    Mod = await import('../../../locales/en/Modal.json')
                     break;
                 case 'uzk':
                     file = await import('../../../locales/uzk/AboutHeader.json');
+                    Mod = await import('../../../locales/uzk/Modal.json')
                     break;
                 default:
                     file = await import('../../../locales/uz/AboutHeader.json');
+                    Mod = await import('../../../locales/uz/Modal.json')
             }
             setData(file.default);
+            setModal(Mod.default);
         };
 
         loadData();
     }, [til]);
 
-    // Raqamlarni 3 soniya ichida oshirish animatsiyasi
     useEffect(() => {
         const statsValues = ["500+", "10+", "10+", "80%"];
-        const duration = 3000; // 3 soniya
-        const intervalTime = 50; // Har 50ms da yangilanadi
-        const steps = duration / intervalTime; // Umumiy qadamlar soni
+        const duration = 3000;
+        const intervalTime = 50;
+        const steps = duration / intervalTime;
 
-        const targetValues = statsValues.map(value => parseInt(value.replace(/\D/g, ''))); // Raqamlarni olish (masalan, "500+" dan 500 ni olamiz)
+        const targetValues = statsValues.map(value => parseInt(value.replace(/\D/g, '')));
 
         const intervals = targetValues.map((target, index) => {
-            const increment = target / steps; // Har bir qadamda oshiriladigan qiymat
+            const increment = target / steps;
             let currentCount = 0;
 
             const interval = setInterval(() => {
@@ -73,7 +80,6 @@ const AboutAndAchievementsSection = () => {
             return interval;
         });
 
-        // Komponent unmount bo‘lganda intervallarni tozalash
         return () => intervals.forEach(interval => clearInterval(interval));
     }, []);
 
@@ -81,7 +87,7 @@ const AboutAndAchievementsSection = () => {
         <div className="flex justify-center items-center h-screen bg-gray-100">
             <div className="flex flex-col items-center">
                 <div className="w-16 h-16 border-4 border-red-600 border-t-transparent rounded-full animate-spin"></div>
-                <p className="mt-4 text-lg font-semibold text-gray-700 animate-pulse">Yuklanmoqda...</p>
+                <p className="mt-4 text-lg font-semibold text-gray-700 animate-pulse">{modal.loading}</p>
             </div>
         </div>
     );

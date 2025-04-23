@@ -1,0 +1,16 @@
+{
+    "title": "Konsultatsiya uchun ro‘yxatdan o‘tish",
+    "description": "Ma'lumotlaringizni kiriting, tez orada siz bilan bog‘lanamiz.",
+    "namePlaceholder": "Ismingiz",
+    "coursePlaceholder": "Kursni tanlang",
+    "phonePlaceholder": "Telefon raqamingiz",
+    "courses": {
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "design": "Dizayn"
+    },
+    "error": "Iltimos, barcha maydonlarni to‘ldiring!",
+    "success": "Ma'lumotlar muvaffaqiyatli yuborildi!",
+    "submitButton": "Yuborish",
+    "loadingButton": "Yuborilmoqda..."
+}

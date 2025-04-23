@@ -1,0 +1,16 @@
+{
+    "title": "Register for Consultation",
+    "description": "Enter your details, and we will contact you soon.",
+    "namePlaceholder": "Your name",
+    "coursePlaceholder": "Select a course",
+    "phonePlaceholder": "Your phone number",
+    "courses": {
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "design": "Design"
+    },
+    "error": "Please fill in all fields!",
+    "success": "Data successfully sent!",
+    "submitButton": "Submit",
+    "loadingButton": "Sending..."
+}

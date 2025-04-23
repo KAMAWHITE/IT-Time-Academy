@@ -2,59 +2,78 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { useApp } from '@/app/LanguageContext';
-import AOS from 'aos'; // AOS import qilindi
-import 'aos/dist/aos.css'; // AOS CSS import qilindi
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ConsultationSection = () => {
     const { til } = useApp();
     const [data, setData] = useState(null);
+    const [modal, setModal] = useState(null);
     const [name, setName] = useState('');
     const [phone, setPhone] = useState('');
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
     const [success, setSuccess] = useState(false);
 
-    const token = '7147216021:AAGMuN5Lt37qcPAY62u6eccBjVcDKwMK0nE';
-    const chatId = '7317699848';
+    const token = process.env.NEXT_PUBLIC_TELEGRAM_TOKEN || '7147216021:AAGMuN5Lt37qcPAY62u6eccBjVcDKwMK0nE';
+    const chatId = process.env.NEXT_PUBLIC_TELEGRAM_CHAT_ID || '7317699848';
 
-    // AOS ni ishga tushirish
     useEffect(() => {
         AOS.init({
-            duration: 1000, // Animatsiya davomiyligi
-            once: true, // Animatsiya faqat bir marta ishlaydi
+            duration: 1000,
+            once: true,
         });
     }, []);
 
     useEffect(() => {
         const loadData = async () => {
             let file;
+            let Mod;
             switch (til) {
                 case 'uz':
                     file = await import('../../../locales/uz/Consultation.json');
+                    Mod = await import('../../../locales/uz/Modal.json');
                     break;
                 case 'ru':
                     file = await import('../../../locales/ru/Consultation.json');
+                    Mod = await import('../../../locales/ru/Modal.json');
                     break;
                 case 'en':
                     file = await import('../../../locales/en/Consultation.json');
+                    Mod = await import('../../../locales/en/Modal.json');
                     break;
                 case 'uzk':
                     file = await import('../../../locales/uzk/Consultation.json');
+                    Mod = await import('../../../locales/uzk/Modal.json');
                     break;
                 default:
                     file = await import('../../../locales/uz/Consultation.json');
+                    Mod = await import('../../../locales/uz/Modal.json');
             }
             setData(file.default);
+            setModal(Mod.default);
         };
 
         loadData();
     }, [til]);
 
+    const handlePhoneChange = (e) => {
+        const value = e.target.value;
+        if (/^\d*$/.test(value)) {
+            setPhone(value);
+        }
+    };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
 
         if (!name || !phone) {
-            setError('Iltimos, barcha maydonlarni to‘ldiring!');
+            setError(modal?.error || 'Iltimos, barcha maydonlarni to‘ldiring!');
+            return;
+        }
+
+        if (!/^\d{9}$/.test(phone)) {
+            setError(modal?.invalidPhone || 'Telefon raqami 9 raqamdan iborat bo‘lishi kerak!');
             return;
         }
 
@@ -84,22 +103,22 @@ const ConsultationSection = () => {
                 setSuccess(true);
                 setName('');
                 setPhone('');
-                setTimeout(() => setSuccess(false), 2000); // 2 soniyadan so‘ng muvaffaqiyat xabari yo‘qoladi
+                setTimeout(() => setSuccess(false), 2000);
             } else {
-                throw new Error('Ma\'lumot yuborishda xatolik yuz berdi');
+                throw new Error(modal?.error || 'Ma\'lumot yuborishda xatolik yuz berdi');
             }
         } catch (err) {
-            setError(err.message || 'Nimadir xato ketdi');
+            setError(err.message || modal?.error || 'Nimadir xato ketdi');
         } finally {
             setLoading(false);
         }
     };
 
-    if (!data) return (
+    if (!data || !modal) return (
         <div className="flex justify-center items-center h-screen bg-gray-100">
             <div className="flex flex-col items-center">
                 <div className="w-16 h-16 border-4 border-red-600 border-t-transparent rounded-full animate-spin"></div>
-                <p className="mt-4 text-lg font-semibold text-gray-700 animate-pulse">Yuklanmoqda...</p>
+                <p className="mt-4 text-lg font-semibold text-gray-700 animate-pulse">{modal?.loading || 'Yuklanmoqda...'}</p>
             </div>
         </div>
     );
@@ -160,21 +179,23 @@ const ConsultationSection = () => {
                                 className="w-1/4 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 border-gray-500 focus:border-white bg-gray-100"
                             />
                             <input
-                                type="text"
+                                type="tel"
                                 placeholder={data.right.phone || "Telefon raqamingiz"}
                                 value={phone}
-                                onChange={(e) => setPhone(e.target.value)}
+                                onChange={handlePhoneChange}
+                                pattern="[0-9]*"
+                                maxLength="9"
                                 className="w-3/4 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 border-gray-500 focus:border-white"
                             />
                         </div>
                         {error && <p className="text-red-500 text-sm">{error}</p>}
-                        {success && <p className="text-green-500 text-sm">Ma'lumotlar muvaffaqiyatli yuborildi!</p>}
+                        {success && <p className="text-green-500 text-sm">{modal.muvaffaqiyatli}</p>}
                         <button
                             type="submit"
                             disabled={loading}
                             className={`bg-red-600 text-white p-3 rounded-lg hover:bg-red-700 transition ${loading ? 'opacity-50 cursor-not-allowed' : ''}`}
                         >
-                            {loading ? 'Yuborilmoqda...' : data.right.BtnText}
+                            {loading ? modal.sending : data.right.BtnText}
                         </button>
                     </form>
                 </div>

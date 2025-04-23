@@ -1,21 +1,28 @@
 "use client";
 import React, { useRef, useState, useEffect } from 'react';
-import AOS from 'aos'; // AOS import qilindi
-import 'aos/dist/aos.css'; // AOS CSS import qilindi
-import { FaPlay, FaVolumeUp, FaVolumeMute } from 'react-icons/fa';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { FaPlay, FaPause, FaVolumeUp, FaVolumeMute } from 'react-icons/fa';
 import StudentsUz from '../../../locales/uz/Students.json';
 import StudentsRu from '../../../locales/ru/Students.json';
 import StudentsEn from '../../../locales/en/Students.json';
 import StudentsUzk from '../../../locales/uzk/Students.json';
 import { useApp } from '@/app/LanguageContext';
 
-const VideoCard = ({ name, position, description, skills, company, incomeGrowth, videoSrc }) => {
+const VideoCard = ({ name, position, description, skills, company, incomeGrowth, videoSrc, labels }) => {
     const videoRef = useRef(null);
     const [isMuted, setIsMuted] = useState(true);
+    const [isPlaying, setIsPlaying] = useState(false);
 
     const handlePlay = () => {
         if (videoRef.current) {
-            videoRef.current.play();
+            if (isPlaying) {
+                videoRef.current.pause();
+                setIsPlaying(false);
+            } else {
+                videoRef.current.play();
+                setIsPlaying(true);
+            }
         }
     };
 
@@ -45,11 +52,15 @@ const VideoCard = ({ name, position, description, skills, company, incomeGrowth,
                         )}
                     </button>
                     <button onClick={handlePlay}>
-                        <FaPlay className="text-white text-xl" />
+                        {isPlaying ? (
+                            <FaPause className="text-white text-xl" />
+                        ) : (
+                            <FaPlay className="text-white text-xl" />
+                        )}
                     </button>
                 </div>
                 <div className="mt-4">
-                    <span className="text-green-500 text-sm font-semibold">Bitiruvchi</span>
+                    <span className="text-green-500 text-sm font-semibold">{labels.graduateLabel}</span>
                     <h2 className="text-white text-2xl font-bold mt-2">{name}</h2>
                     <h3 className="text-white text-lg font-semibold mt-2">{position}</h3>
                     <p className="text-gray-400 text-sm mt-2">{description}</p>
@@ -66,12 +77,12 @@ const VideoCard = ({ name, position, description, skills, company, incomeGrowth,
                 </div>
                 <div className="mt-6">
                     <p className="text-gray-400 text-sm">
-                        <span className="font-semibold text-white">KOMPANIYA</span>
+                        <span className="font-semibold text-white">{labels.companyLabel}</span>
                         <br />
                         {company}
                     </p>
                     <p className="text-red-500 text-sm mt-2">
-                        <span className="font-semibold">Daromad o‘sishi</span>
+                        <span className="font-semibold">{labels.incomeGrowthLabel}</span>
                         <br />
                         {incomeGrowth}
                     </p>
@@ -83,14 +94,39 @@ const VideoCard = ({ name, position, description, skills, company, incomeGrowth,
 
 const VideoCardsSection = () => {
     const { til } = useApp();
+    const [labels, setLabels] = useState(null);
 
-    // AOS ni ishga tushirish
     useEffect(() => {
         AOS.init({
-            duration: 1000, // Animatsiya davomiyligi
-            once: true, // Animatsiya faqat bir marta ishlaydi
+            duration: 1000,
+            once: true,
         });
-    }, []);
+        return () => AOS.refresh();
+    }, [til]);
+
+    useEffect(() => {
+        const loadLabels = async () => {
+            let file;
+            switch (til) {
+                case 'uz':
+                    file = await import('../../../locales/uz/VideoCards.json');
+                    break;
+                case 'ru':
+                    file = await import('../../../locales/ru/VideoCards.json');
+                    break;
+                case 'en':
+                    file = await import('../../../locales/en/VideoCards.json');
+                    break;
+                case 'uzk':
+                    file = await import('../../../locales/uzk/VideoCards.json');
+                    break;
+                default:
+                    file = await import('../../../locales/uz/VideoCards.json');
+            }
+            setLabels(file.default);
+        };
+        loadLabels();
+    }, [til]);
 
     const studentsData = {
         uz: StudentsUz,
@@ -99,20 +135,23 @@ const VideoCardsSection = () => {
         uzk: StudentsUzk,
     }[til] || StudentsUz;
 
+    if (!labels) return null;
+
     return (
-        <div className='text-center bg-[#e7e7e7]'>
-            <h1 className='text-[30px] md:text-[40px] lg:text-[40px] font-bold py-10'>Bitiruvchilarimiz muvaffaqiyat tarixi</h1>
+        <div className="text-center bg-[#e7e7e7]">
+            <h1 className="text-[30px] md:text-[40px] lg:text-[40px] font-bold py-10">{labels.title}</h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6">
                 {studentsData.map((data, index) => (
                     <div data-aos="flip-left" key={index}>
                         <VideoCard
                             name={data.name}
-                            position={data.position}
-                            description={data.description}
+                            position={data.occupation}
+                            description={data.about}
                             skills={data.skills}
                             company={data.company}
                             incomeGrowth={data.incomeGrowth}
                             videoSrc={data.videoSrc}
+                            labels={labels}
                         />
                     </div>
                 ))}

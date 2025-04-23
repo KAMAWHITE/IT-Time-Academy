@@ -1,42 +1,42 @@
 [
-    {
-      "name": "АКБАР",
-      "status": "Выпускник",
-      "occupation": "Frontend разработчик",
-      "about": "Успешно завершил курс и устроился на работу в IT-компанию",
-      "skills": ["HTML", "CSS", "JavaScript", "React"],
-      "company": "LIMSA",
-      "incomeGrowth": "700+",
-      "videoSrc": "/intervyu.mp4"
-    },
-    {
-      "name": "АСИЛБЕК",
-      "status": "Выпускник",
-      "occupation": "Frontend разработчик",
-      "about": "Успешно завершил курс и устроился на работу в IT-компанию",
-      "skills": ["HTML", "SASS", "TypeScript", "React", "RestAPI"],
-      "company": "MARSITSCHOOL",
-      "incomeGrowth": "900+",
-      "videoSrc": "/intervyu.mp4"
-    },
-    {
-      "name": "МУХАММАДИСЛОМ",
-      "status": "Выпускник",
-      "occupation": "Frontend разработчик",
-      "about": "Успешно завершил курс и устроился на работу в IT-компанию",
-      "skills": ["HTML", "SASS", "JavaScript", "React", "TAILWIND", "TypeScript"],
-      "company": "IT WORKS",
-      "incomeGrowth": "750+",
-      "videoSrc": "/intervyu.mp4"
-    },
-    {
-      "name": "САМАНДАР",
-      "status": "Выпускник",
-      "occupation": "Frontend разработчик",
-      "about": "Успешно завершил курс и устроился на работу в IT-компанию",
-      "skills": ["HTML", "SASS", "JavaScript", "Vue 3", "Nuxt", "TypeScript"],
-      "company": "GREATSOFT",
-      "incomeGrowth": "650+",
-      "videoSrc": "/intervyu.mp4"
-    }
-  ]
+  {
+    "name": "АКБАР",
+    "status": "Выпускник",
+    "occupation": "Фронтенд-разработчик",
+    "about": "Успешно завершил курс и нашел работу в IT-компании",
+    "skills": ["HTML", "CSS", "JavaScript", "React"],
+    "company": "ЛИМСА",
+    "incomeGrowth": "700+",
+    "videoSrc": "/video-1.mp4"
+  },
+  {
+    "name": "АСИЛБЕК",
+    "status": "Выпускник",
+    "occupation": "Фронтенд-разработчик",
+    "about": "Успешно завершил курс и нашел работу в IT-компании",
+    "skills": ["HTML", "SASS", "TypeScript", "React", "RestAPI"],
+    "company": "МАРСИТСКУЛ",
+    "incomeGrowth": "900+",
+    "videoSrc": "/video-2.mp4"
+  },
+  {
+    "name": "МУХАММАДИСЛОМ",
+    "status": "Выпускник",
+    "occupation": "Фронтенд-разработчик",
+    "about": "Успешно завершил курс и нашел работу в IT-компании",
+    "skills": ["HTML", "SASS", "JavaScript", "React", "TAILWIND", "TypeScript"],
+    "company": "ИТ ВОРКС",
+    "incomeGrowth": "750+",
+    "videoSrc": "/video-3.mp4"
+  },
+  {
+    "name": "САМАНДАР",
+    "status": "Выпускник",
+    "occupation": "Фронтенд-разработчик",
+    "about": "Успешно завершил курс и нашел работу в IT-компании",
+    "skills": ["HTML", "SASS", "JavaScript", "Vue 3", "Nuxt", "TypeScript"],
+    "company": "ГРЕЙТСОФТ",
+    "incomeGrowth": "650+",
+    "videoSrc": "/video-4.mp4"
+  }
+]

@@ -9,27 +9,35 @@ import { useApp } from '@/app/LanguageContext';
 const ContactSection = () => {
     const { til } = useApp();
     const [data, setData] = useState(null);
+    const [modal, setModal] = useState('')
 
     useEffect(() => {
         const loadData = async () => {
             let file;
+            let Mod;
             switch (til) {
                 case 'uz':
                     file = await import('../../../locales/uz/Contacts.json');
+                    Mod = await import('../../../locales/uz/Modal.json')
                     break;
                 case 'ru':
                     file = await import('../../../locales/ru/Contacts.json');
+                    Mod = await import('../../../locales/ru/Modal.json')
                     break;
                 case 'en':
                     file = await import('../../../locales/en/Contacts.json');
+                    Mod = await import('../../../locales/en/Modal.json')
                     break;
                 case 'uzk':
                     file = await import('../../../locales/uzk/Contacts.json');
+                    Mod = await import('../../../locales/uzk/Modal.json')
                     break;
                 default:
                     file = await import('../../../locales/uz/Contacts.json');
+                    Mod = await import('../../../locales/uz/Modal.json')
             }
             setData(file.default);
+            setModal(Mod.default)
         };
 
         loadData();
@@ -39,7 +47,7 @@ const ContactSection = () => {
         <div className="flex justify-center items-center h-screen bg-gray-100">
             <div className="flex flex-col items-center">
                 <div className="w-16 h-16 border-4 border-red-600 border-t-transparent rounded-full animate-spin"></div>
-                <p className="mt-4 text-lg font-semibold text-gray-700 animate-pulse">Yuklanmoqda...</p>
+                <p className="mt-4 text-lg font-semibold text-gray-700 animate-pulse">{modal.muvaffaqiyatli}</p>
             </div>
         </div>
     );

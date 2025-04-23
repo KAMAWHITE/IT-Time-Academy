@@ -43,7 +43,6 @@ export default function Header() {
         setIsContactOpen(!isContactOpen);
     };
 
-    // Body scrollni boshqarish
     useEffect(() => {
         if (isMenuOpen || isModalOpen) {
             document.body.classList.add('overflow-hidden');
@@ -51,7 +50,6 @@ export default function Header() {
             document.body.classList.remove('overflow-hidden');
         }
 
-        // Cleanup on component unmount
         return () => {
             document.body.classList.remove('overflow-hidden');
         };
@@ -106,7 +104,6 @@ export default function Header() {
                     )}
                 </div>
 
-                {/* Contact Toggle Button for Mobile */}
                 <button
                     className="md:hidden text-xl text-white"
                     onClick={handleContactToggle}
@@ -114,7 +111,6 @@ export default function Header() {
                     <FaHeadset />
                 </button>
 
-                {/* Contact Components */}
                 <div
                     className={`${isContactOpen ? 'flex' : 'hidden'
                         } md:flex items-center space-x-5 text-[16px] flex-col md:flex-row absolute md:static top-12 left-0 w-full md:w-auto bg-red-800 md:bg-transparent p-4 md:p-0 z-20`}
@@ -159,7 +155,6 @@ export default function Header() {
                     </div>
                 </div>
 
-                {/* Hamburger Button for Mobile */}
                 <button
                     className="md:hidden text-2xl text-gray-700"
                     onClick={handleMenuToggle}
@@ -167,7 +162,6 @@ export default function Header() {
                     {isMenuOpen ? <FaTimes /> : <FaBars />}
                 </button>
 
-                {/* Navigation Menu */}
                 <div
                     className={`${isMenuOpen ? 'flex' : 'hidden'
                         } md:flex flex-col md:flex-row absolute md:static top-20 left-0 w-full md:w-auto bg-white md:bg-transparent shadow-md md:shadow-none z-20 md:gap-0 p-5 md:p-0`}
